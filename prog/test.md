@@ -1,0 +1,109 @@
+# TP 11 : Python avec Thonny
+
+## Mise en place
+
+1. Synchronisez votre compte OneDrive sur l'ordinateur
+2. Ouvrez l'application `Thonny`
+
+[Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
+
+## Maths, Affichage & Variables
+
+Vous pourrez vérifier vos réponses sur [le vérificateur](https://gymnase-checker.onrender.com/?exercises=multiplication,circle_perimeter){:target="_blank"}. 
+
+### Multiplication
+
+Que va imprimer le programme suivant ?
+
+```python
+a = 6
+b = 7
+print(a * b)
+```
+
+<details><summary markdown="span">Solution</summary>
+
+```bash
+42
+```
+
+</details>
+
+1. Sur l'éditeur `Thonny`, copiez ce programme et enregistrez-le sous `/OneDrive - Education Vaud/informatique/tp-11/multiplication.py`
+2. Pour exécuter le programme, cliquez sur le bouton vert ▶ et le résultat s'affichera dans la `console` en bas de la fenêtre
+3. Pour vérifier votre programme, allez sur [le vérificateur](https://gymnase-checker.onrender.com/?exercises=multiplication,circle_perimeter){:target="_blank"} et téléversez le fichier sur l'application sous le bon exercice
+
+Sauvegardez les prochains exercices dans le dossier `/OneDrive - Education Vaud/informatique/tp-11/` avec le nom donné. 
+Puis vérifiez votre résultat sur [le vérificateur](https://gymnase-checker.onrender.com/?exercises=multiplication,circle_perimeter){:target="_blank"}. 
+
+### Périmètre d'un cercle
+
+Complétez le programme `circle_perimeter.py` suivant :
+
+```python
+PI = 3.14
+rayon = 7
+perimetre = ...
+
+print(perimetre)
+```
+
+<details><summary markdown="span">Solution</summary>
+
+```python
+PI = 3.14
+rayon = 7
+perimetre = 2 * PI * rayon
+
+print(perimetre)
+```
+
+</details>
+
+## Saisie & Conversion
+
+[Vérificateur](https://gymnase-checker.onrender.com/?exercises=hello,age){:target="_blank"}
+
+### Bonjour
+
+Ecrivez un programme `hello.py` qui demande à l'utilisateur son nom puis qui lui répond `Bonjour, <nom> !` :
+
+```
+Comment vous appelez-vous ? John
+Bonjour, John !
+```
+
+<details><summary markdown="span">Solution</summary>
+
+```python
+nom = input("Comment vous appelez-vous ? ")
+print(f"Bonjour, {nom} !")
+```
+
+</details>
+
+### Âge
+
+Ecrivez un programme `age.py` qui demande à l'utilisateur son année de naissance puis qui lui répond `Vous avez <age> ans cette année !` :
+
+```
+Quelle est votre année de naissance ? 2006
+Vous avez 16 ans cette année !
+```
+
+<details><summary markdown="span">Solution</summary>
+
+```python
+annee = int(input("Quelle est votre année de naissance ? "))
+print(f"Vous avez {2022 - annee} ans cette année !")
+```
+
+</details>
+
+## Exercices Papier
+
+Voir les exercices distribués. 
+
+---
+
+[Retour à l'accueil](../README.md)
