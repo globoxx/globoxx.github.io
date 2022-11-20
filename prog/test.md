@@ -2,6 +2,8 @@
 
 [Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
+### Votre tout premier programme
+
 Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
 ```python
 print("bonjour")
@@ -13,7 +15,7 @@ En anglais, "print" signifie “imprime". En Python, l’instruction print deman
 > Ecrivez et exécutez le programme ci-dessus sur `Thonny`.
 > Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !"
 
-### Exemple 2
+### Les commentaires
 
 Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
 En Python un commentaire est introduit par le caractère \#. 
@@ -30,8 +32,36 @@ print("bonjour") # salutations
 > 
 > <details><summary markdown="span">Solution</summary>
 > 	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. **Du texte s'écrit toujours entre guillemets ou apostrophes** ("" ou '').
+> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
+
+### Exercices turtle
+`turtle` est un module Python permettant de faire du dessin en codant. La tortue peut se déplacer et dessiner une trace avec les 4 fonctions :
+1. `forward(d)` pour avancer d’une distance `d` (en pixels).
+2. `backward(d)` pour reculer.
+3. `left(a)` pour tourner à gauche d’un angle `a` (en degrés).
+4. `right(a)` pour tourner à droite
+
+Ce code permet de dessiner un carré, testez-le !
+```python
+import turtle # Importe le module
+
+turtle.forward(100) # Avance de 100 pixels
+turtle.left(90) # Tourne a gauche de 90 degres
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+
+turtle.done() # Termine le dessin
+```
+Si vous êtes curieux, la plateforme <a href="https://apprendre.modulo-info.ch/prog1/dessiner.html">Modulo</a> propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
+
+> ### <span style="background-color:#c6d9f7"> Exercice 2 </span>
+> Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels. (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
+
 
 ---
 
