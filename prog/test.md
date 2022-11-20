@@ -2,18 +2,16 @@
 
 [Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
-### Exemple 1
-
 Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
 ```python
 print("bonjour")
 ```
 En anglais, "print" signifie “imprime". En Python, l’instruction print demande à l’ordinateur d’afficher à l’écran le contenu de la parenthèse qui vient après.
 
-### <span style="background-color:#c6d9f7"> Exercice 1 </span>
-
-Ecrivez et exécutez le programme ci-dessus sur `Thonny`.
-Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !"
+> ### <span style="background-color:#c6d9f7"> Exercice 1 </span>
+>
+> Ecrivez et exécutez le programme ci-dessus sur `Thonny`.
+> Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !"
 
 ### Exemple 2
 
