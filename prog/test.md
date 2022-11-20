@@ -1,4 +1,4 @@
-# TP 11 : Python avec Thonny
+# Introduction
 
 ## Mise en place
 
@@ -7,9 +7,13 @@
 
 [Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
-## Maths, Affichage & Variables
+## Exemple 1
 
-Vous pourrez vérifier vos réponses sur [le vérificateur](https://gymnase-checker.onrender.com/?exercises=multiplication,circle_perimeter){:target="_blank"}. 
+Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
+```python
+print("bonjour")
+```
+En anglais, "print" signifie “imprime". En Python, l’instruction print demande à l’ordinateur d’afficher à l’écran le contenu de la parenthèse qui vient après.
 
 ### Multiplication
 
