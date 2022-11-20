@@ -24,17 +24,15 @@ Cela sert uniquement à l’humain qui va lire le programme.
 print("bonjour") # salutations
 ```
 
-### <div style="background-color:#c6d9f7"> Exercice 2
+> ### <span style="background-color:#c6d9f7"> Exercice 2 </span>
+> 
+> Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
+> 
+> <details><summary markdown="span">Solution</summary>
+> 	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
+> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. **Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '')**.
+> </details>
 
-Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
-
-<details>
-	<summary markdown="span">Solution</summary>
-	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. **Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '')**.
-</details>
-
-</div>
 ---
 
 [Retour à l'accueil](../README.md)
