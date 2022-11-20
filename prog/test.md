@@ -59,7 +59,7 @@ turtle.done() # Termine le dessin
 ```
 Si vous êtes curieux, la plateforme <a href="https://apprendre.modulo-info.ch/prog1/dessiner.html">Modulo</a> propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 2 </span>
+> ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
 > Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels. (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
 
 
