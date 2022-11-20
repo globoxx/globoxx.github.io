@@ -30,7 +30,7 @@ print("bonjour") # salutations
 > 
 > <details><summary markdown="span">Solution</summary>
 > 	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. **Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '')**.
+> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. **Du texte s'écrit toujours entre guillemets ou apostrophes** ("" ou '').
 > </details>
 
 ---
