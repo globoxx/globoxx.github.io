@@ -65,7 +65,8 @@ Si vous êtes curieux, la plateforme [Modulo](https://apprendre.modulo-info.ch/p
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 1 </span>
 >
-> Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels. (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
+> Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels.  
+> (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
 
 
 ---
