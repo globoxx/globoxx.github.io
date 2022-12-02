@@ -61,7 +61,7 @@ turtle.left(90)
 
 turtle.done() # Termine le dessin
 ```
-Si vous êtes curieux, la plateforme [Modulo] (https://apprendre.modulo-info.ch/prog1/dessiner.html) propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
+Si vous êtes curieux, la plateforme [Modulo](https://apprendre.modulo-info.ch/prog1/dessiner.html) propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 1 </span>
 >
