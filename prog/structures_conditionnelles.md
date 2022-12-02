@@ -5,7 +5,7 @@
 ### Les structures conditionnelles
 
 Les structures de contrôle sont un élément central de la programmation.
-Elles permettent de moduler l’exécution d'un programme selon la valeur de ces variables.
+Elles permettent de moduler l’exécution d'un programme selon la valeur de ses variables.
 Les structures de contrôle se retrouvent de façon presque identique dans les autres langages de programmation.
 
 ### L'instruction if
@@ -29,25 +29,48 @@ L’indentation du texte (c’est-à-dire où la ligne commence) est importante.
 Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.
 (L'indentation se fait de préférence avec la touche tabulation du clavier.)
 
-> ### Exercice 15 - T'es jeune ou pas ? </span>
+> ### Exercice 15 - Jeune ou vieux ?
 > 
 > Ecrivez un programme qui demande son âge à l’utilisateur. 
 > Si l’utilisateur donne un nombre inférieur à 20, le programme écrit "Comme vous êtes jeune !", sinon il écrit "Comme vous êtes vieux !".
 
-> ### Exercice 16 - Maximum </span>
+> ### Exercice 16 - Maximum
 > 
 > Ecrivez la fonction maximum(a, b) qui prend 2 nombres en argument et retourne le plus grand.
 
 Le bloc `elif` peut être ajouté après le bloc `if` pour tester des conditions supplémentaires.
 Notez que `elif` est la contraction de else if (sinon si, en français).
-L'exemple suivant 
+L'exemple suivant démontre son utilité quand on a 4 situations possibles:
 ```python
-ok = True
-if ok:
-	print("la variable ok est vraie")
+il_est_tard = False
+je_suis_fatigue = False
+
+if il_est_tard and je_suis_fatigue:
+	print("Je vais dormir")
+elif il_est_tard and not je_suis_fatigue:
+	print("Je joue à la console")
+elif not il_est_tard and je_suis_fatigue:
+	print("Je fais une sieste")
 else:
-	print("la variable ok est fausse")
+	# Il ne reste plus qu'une seule possibilité
+	print("Je vais courir dehors")
 ```
+
+> ### Exercice 17 - Gagné, perdu ou match nul ?
+> 
+> Ecrivez un programme qui demande à l'utilisateur d'entrer les buts de l'équipe domicile et de l'équipe extérieur.
+> Le programme affiche ensuite quelle équipe a gagné le match (ou match nul en cas d'égalité).
+
+> **Exemples d’exécution :**
+> ```
+> Buts marqués par l'équipe domicile : 1
+> Buts marqués par l'équipe extérieur : 2
+> L'équipe extérieur a gagné !!
+>
+> Buts marqués par l'équipe domicile : 0
+> Buts marqués par l'équipe extérieur : 0
+> Match nul !
+> ```
 
 ### L'instruction while
 
@@ -66,7 +89,7 @@ Puis, tant qu’elle est inférieure à 100, on l’affiche à l’écran et on 
 Ainsi, `a` passera de 1 à 2 à 4 à 8, etc. 
 Le programme imprime donc toute les puissances de deux inférieures à 100.
 
-> ### Exercice 17 - T'es jeune ou pas ? </span>
+> ### Exercice 17 - T'es jeune ou pas ?
 > 
 > Modifier le programme ci-dessus pour qu’il imprime toutes les puissances de 10 inférieures ou égales à 10000.
 
