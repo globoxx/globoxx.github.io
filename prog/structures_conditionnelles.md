@@ -60,7 +60,7 @@ else:
 > 
 > Ecrivez un programme qui demande à l'utilisateur d'entrer les buts de l'équipe domicile et de l'équipe extérieur.
 > Le programme affiche ensuite quelle équipe a gagné le match (ou match nul en cas d'égalité).
-
+>
 > **Exemples d’exécution :**
 > ```
 > Buts marqués par l'équipe domicile : 1
@@ -71,6 +71,7 @@ else:
 > Buts marqués par l'équipe extérieur : 0
 > Match nul !
 > ```
+>
 
 ### L'instruction while
 

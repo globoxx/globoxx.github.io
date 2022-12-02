@@ -89,6 +89,7 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > Entrez votre taille (m) : 1.84
 > Votre IMC est de 24.810964083175
 > ```
+>
 
 
 ### Exercices Turtle (facultatif)
