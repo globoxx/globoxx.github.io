@@ -114,9 +114,9 @@ Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` ser
 > print(f'diametre = {diametre}')
 > print(f'circonference = {circonference}')
 > print(f'surface = {surface}')
-> (Rappel : La circonférence d’un cercle est égale à pi fois son diamètre.
-> La surface d’un cercle est égale à pi fois son rayon au carré.)
 > ```
+> (Rappel : La circonférence d’un cercle est égale à pi fois son diamètre.  
+> La surface d’un cercle est égale à pi fois son rayon au carré.)
 
 ### Exercices Turtle (facultatif)
 
