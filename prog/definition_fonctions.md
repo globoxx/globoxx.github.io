@@ -2,66 +2,109 @@
 
 [Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
-### Votre tout premier programme
+### La définition de fonction
 
-Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
+Il est souvent utile d’écrire ses propres fonctions, afin de ne pas avoir à écrire
+plusieurs fois le même bout de code. En programmation, le concept de fonc-
+tion n’est pas exactement le même qu’en mathématiques. Il faut plutôt le voir
+comme un sous-programme auquel on fournit des objets et qui peut en retourner
+d’autres.
+Pour définir une fonction, il faut indiquer les éléments suivants :
+1. Le mot-clé def suivi du nom de la fonction puis de deux points ( :).
+2. Les arguments, ou variables d’entrée, qui indiquent quels sont les objets à
+fournir à la fonction pour que le programme puisse l’exécuter. Certaines
+fonctions ne prennent aucun argument.
+3. La liste des instructions de la fonction, autrement dit, le sous-programme
+effectué par la fonction. La liste des instructions est indentée par rapport
+au programme principal, c’est-à-dire qu’elle est décalée à droite. Une liste
+d’instruction est aussi appelée un bloc d’instruction.
+4. Dans le cas où la fonction retourne un résultat, il est nécessaire d’utiliser
+le mot-clé return suivi de l’objet à retourner.
+Ces quatre éléments constituent la définition de la fonction. Une fois une
+fonction ainsi définie, on peut l’utiliser (l’appeler) autant de fois que l’on désire
+dans un programme.
+
+Voici la syntaxe générale pour définir une fonction :
 ```python
-print("bonjour")
+def nom_de_votre_fonction(argument1, argument2, ...):
+	...
+	# bloc d'instruction
+	...
+	# return resultat (optionnel)
 ```
-En anglais, "print" signifie “imprime". En Python, l’instruction print demande à l’ordinateur d’afficher à l’écran le contenu de la parenthèse qui vient après.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 1 </span>
+Rappelez-vous de ceci :
+1. On définit une fonction qu’une seule fois.
+2. On appelle une fonction autant de fois que l’on veut.
+3. Si on ne l’appelle pas, la fonction n’est pas exécutée.
+
+```python
+def au_cube(n):
+	cube = n**3
+	return cube
+	
+a = au_cube(2)
+b = au_cube(5)
+print(f"Les cubes de 2 et 5 sont {a} et {b}")
+```
+L’exemple ci-dessus montre la définition d’une fonction nommée au_cube pre-
+nant 1 argument et retournant le cube de cet argument.
+
+> ### <span style="background-color:#c6d9f7"> Exercice 12 - Première fonction </span>
 >
-> Ecrivez et exécutez le programme ci-dessus sur `Thonny`.
-> Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !"
+> Ecrivez une fonction au_carre qui calcule le carré d’un nombre et le retourne. 
+> Utiliser cette fonction pour calculer et afficher le carré des nombres 6, -5 et 573.28.
 
-### Les commentaires
-
-Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
-En Python un commentaire est introduit par le caractère \#. 
-Tout ce qui vient après et jusqu’à la fin de la ligne, n’est pas lu par l’ordinateur.
-Cela sert uniquement à l’humain qui va lire le programme.
 ```python
-# un tout petit programme
-print("bonjour") # salutations
+def saluer(prenom, nom):
+	print(f"Bonjour {prenom} {nom}")
+	print("Bienvenue")
+	
+saluer("Pierre", "Schmutz")
 ```
+L’exemple ci-dessus montre la définition d’une fonction qui ne retourne au-
+cune valeur : la fonction ne se termine pas par le mot-clé return. La fonction
+s’exécute (elle affiche des choses) mais ne retourne rien.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 2 </span>
-> 
-> Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
-> 
-> <details><summary markdown="span">Solution</summary>
-> 	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
-> </details>
+Notez que les arguments doivent être donnés dans le même ordre que dans la
+définition de la fonction afin que le programme sache quelle entrée correspond
+à quel argument.
 
-### Exercices turtle
-`turtle` est un module Python permettant de faire du dessin en codant. La tortue peut se déplacer et dessiner une trace avec les 4 fonctions :
-1. `forward(d)` pour avancer d’une distance `d` (en pixels).
-2. `backward(d)` pour reculer.
-3. `left(a)` pour tourner à gauche d’un angle `a` (en degrés).
-4. `right(a)` pour tourner à droite
+> ### <span style="background-color:#c6d9f7"> Exercice 13 - Salutations </span>
+>
+> Modifiez l’exemple ci-dessus pour ajouter un troisième argument de votre choix à la fonction saluer.
+> Faites en sorte que la fonction utilise ce nouvel argument dans son message de bienvenue puis appelez la fonction.
 
-Ce code permet de dessiner un carré, testez-le !
 ```python
-import turtle # Importe le module
-
-turtle.forward(100) # Avance de 100 pixels
-turtle.left(90) # Tourne a gauche de 90 degres
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(90)
-
-turtle.done() # Termine le dessin
+def volume_cylindre(rayon, hauteur):
+	vol = 3.14 * rayon**2 * hauteur
+	return vol
+	
+v1 = volume_cylindre(2.3, 10)
+v2 = volume_cylindre(1.2, 5)
+print("Le volume des cylindres est de {v1} et {v2}")
 ```
-Si vous êtes curieux, la plateforme <a href="https://apprendre.modulo-info.ch/prog1/dessiner.html">Modulo</a> propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
+L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la hauteur d’un cylindre afin d’en retourner le volume.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
-> Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels. (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
+> ### <span style="background-color:#c6d9f7"> Exercice 14 - IMC </span>
+>
+> L’indice de masse corporelle (IMC) d’une personne est donné par son poids (en kg) divisé par le carré de sa taille (en mètres).
+> Ecrivez une fonction qui prend le poids et la taille en argument et retourne l’IMC.
+> Utilisez cette fonction dans un programme qui demande son poids et sa taille (en mètres) à l’utilisateur et affiche son IMC dans le terminal.
+> 
+> *Exemple d’exécution :*
+> Entrez votre poids (kg) : 84
+> Entrez votre taille (m) : 1.84
+> Votre IMC est de 24.8109640831758
 
+### Exercices Turtle (facultatif)
+
+> ### <span style="background-color:#c6d9f7"> Exercice Turtle 4 - Une maison fonctionnelle </span>
+>
+> Il est temps d’améliorer notre code permettant de dessiner une maison grâce aux fonctions !
+> 1. Ecrivez une fonction carre(taille) qui dessine un carré de la taille passée en argument.
+> 2. Ecrivez une fonction triangle(taille) qui dessine un triangle équilatéral avec la taille passée en argument.
+> 3. Enfin, écrivez une fonction maison(taille) qui appelle les 2 fonctions précédentes pour dessiner une maison de la taille passée en argument.
 
 ---
 
