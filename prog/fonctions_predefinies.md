@@ -4,9 +4,10 @@
 
 ## C'est quoi une fonction ?
 
-Python, comme tout autre langage de programmation, contient tout une séries de fonctions, c’est-à-dire des instructions déjà définies qui font faire quelque chose au programme.
-Nous en avons déjà utilisés deux au chapitre précédent, la fonction print qui affiche quelque chose à l’écran et la fonction type qui retourne le type d’un objet.
-L’appel d’une fonction s’effectue en indiquant la nom de la fonction, suivi d’une paires de parenthèses.
+Python, comme tout autre langage de programmation, contient tout une séries de fonctions, c’est-à-dire **des instructions déjà définies qui font faire quelque chose de précis au programme**.
+Nous en avons déjà utilisés deux au chapitre précédent, la fonction `print` qui affiche quelque chose à l’écran et la fonction `type` qui retourne le type d’un objet.
+
+**L’appel d’une fonction s’effectue en indiquant la nom de la fonction, suivi d’une paires de parenthèses**.
 Ces parenthèse contiennent les éventuels arguments de la fonction, c’est-à-dire les objets nécessaires pour que la fonction puisse être exécutée.
 S’il y en a plusieurs, ces arguments sont séparés par des virgules.
 
@@ -28,6 +29,7 @@ print(a)
 ```
 
 Si vous ne donnez qu’un seul argument à la fonction `pow`, Python vous indiquera une erreur.
+
 Souvent, les fonctions retournent une valeur, qui contient le résultat de la fonction.
 Dans l’exemple ci-dessus ce résultat (ici 8) est stocké dans la variable `a` puis affiché.
 La fonction `print` a ceci de spécial qu’elle peut accueillir zéro, un, ou plusieurs arguments.
@@ -37,19 +39,19 @@ Chaque argument sera alors affiché et séparé par un espace.
 a = 3
 b = 5
 print("a vaut", a, "et b vaut", b) # print a ici 4 arguments
-print(f"a vaut {a} et b vaut {b}") # print a ici 1 seul argument
+print(f"a vaut {a} et b vaut {b}") # print a ici 1 seul argument (un string formaté)
 ```
 
 Il est aussi possible d’utiliser ce qu’on appelle un f-string (pour string formaté) afin d’intégrer des variables à une chaîne de caractères.
-Un string formaté a toujours la forme suivante : f"...{var1}...{var2}..." où var1, var2, etc sont des variables dont l’on veut afficher la valeur.
+Un string formaté a toujours la forme suivante : `f"...{var1}...{var2}..."` où `var1`, `var2`, etc sont des variables dont l’on veut afficher la valeur.
 Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 7 </span>
 >
 > Ecrivez un programme qui calcule 3.5 à la puissance 5 et qui affiche le résultat à l’aide d’une phrase commençant par "3.5 à la puissance 5 vaut ...".
 
-Python contient un grand nombre de fonctions, et la plupart d’entre elles sont organisées au sein de modules ou librairies, qui ne sont rien d’autre qu’une collection de fonctions.
-Par exemple, le module `math` contient beaucoup de fonctions mathématiques, comme par exemple la fonction `sqrt` qui calcule la racine carrée (square root en anglais) d’un nombre.
+Python contient un grand nombre de fonctions, et la plupart d’entre elles sont organisées au sein de **modules**, qui ne sont rien d’autre qu’une collection de fonctions.  
+Par exemple, le module `math` contient beaucoup de fonctions mathématiques, comme la fonction `sqrt` qui calcule la racine carrée (square root en anglais) d’un nombre.
 Pour utiliser ces fonctions, il faut d’abord importer le module grâce à l'instruction `import`.
 
 ```python
@@ -59,7 +61,7 @@ a = math.sqrt(9) # calcule la racine carree
 
 La première ligne de l’exemple ci-dessus indique que l’on va utiliser les fonctions du module `math`.
 La seconde ligne utilise la fonction `sqrt` pour calculer la racine carrée de 9.
-La description des fonctions du module `math` est disponible ici: [Module math] (https://docs.python.org/fr/3/library/math.html).
+La description des fonctions du module `math` est disponible ici: [Module math](https://docs.python.org/fr/3/library/math.html){:target="_blank"}.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 8 </span>
 >
@@ -69,7 +71,7 @@ La description des fonctions du module `math` est disponible ici: [Module math] 
 
 ## Les fonctions d'entrée (input)
 
-Une des fonctions les plus utiles est la fonction `input(phrase)` qui affiche `phrase` dans le terminal et retourne la chaîne de caractères que l’utilisateur ou l’utilisatrice écrit dans le terminal.
+Une des fonctions les plus utiles est la fonction `input(phrase)` qui affiche `phrase` dans le terminal et **retourne la chaîne de caractères que l’utilisateur ou l’utilisatrice écrit dans le terminal**.
 Cela lui permet de donner des informations au programme, et le résultat du programme pourra ainsi dépendre des indications de la personne qui l’utilise.
 
 ```python
@@ -92,7 +94,7 @@ age = 2022 - annee
 print(f"Vous avez {age} ans cette annee !")
 ```
 
-Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` sera une chaîne de caractère et la seconde ligne retournera une erreur car Python ne sait pas comment soustraire une chaîne de caractère à un nombre (faites le test !).
+Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` sera une chaîne de caractère et la seconde ligne retournera une erreur car **Python ne sait pas comment soustraire une chaîne de caractère à un nombre** (faites le test !).
 
 > ### <span style="background-color:#c6d9f7"> Exercice 10 </span>
 > 
@@ -118,7 +120,8 @@ Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` ser
 
 ### Exercices Turtle (facultatif)
 
-> ### <span style="background-color:#A8D6C2"> Exercice Turtle 1 </span>
+> ### <span style="background-color:#A8D6C2"> Exercice Turtle 3 </span>
+
 > Reprenez l’exercice Turtle du chapitre précédent mais permettez à l’utilisateur ou utilisatrice de choisir la taille de la maison grâce à la fonction prédéfinie `input`.
 
 ---
