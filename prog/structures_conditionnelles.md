@@ -25,7 +25,7 @@ Si elle est vraie, le bloc d’instructions (décalé à droite) qui vient aprè
 Le bloc `else` (sinon, en français) est exécuté si la condition du `if` n’est pas respectée.
 Notez que le bloc `else` n'est pas obligatoire.
 
-L’indentation du texte (c’est-à-dire où la ligne commence) est importante.
+L’indentation du texte (le décalage à droite) est importante.
 Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.
 (L'indentation se fait de préférence avec la touche tabulation du clavier.)
 
@@ -71,7 +71,6 @@ else:
 > Buts marqués par l'équipe extérieur : 0
 > Match nul !
 > ```
->
 
 ### L'instruction while
 
@@ -82,7 +81,7 @@ un bloc d’instructions tant qu’une condition est remplie.
 a = 1
 while a < 100:
 	print(a)
-a = a*2
+	a = a*2
 print(f"Maintenant a vaut {a} !")
 ```
 Dans cet exemple, on initialise la variable `a` à 1.
@@ -90,9 +89,53 @@ Puis, tant qu’elle est inférieure à 100, on l’affiche à l’écran et on 
 Ainsi, `a` passera de 1 à 2 à 4 à 8, etc. 
 Le programme imprime donc toute les puissances de deux inférieures à 100.
 
-> ### Exercice 17 - T'es jeune ou pas ?
+> ### Exercice 18 - La puissance du 10
 > 
 > Modifier le programme ci-dessus pour qu’il imprime toutes les puissances de 10 inférieures ou égales à 10000.
+
+> ### Exercice 19 - Comment ça va ?
+> 
+> Ecrivez un programme qui demande en boucle à l'utilisateur comment il va tant qu'il ne répond pas "Bien merci et toi ?".
+>
+> **Exemple d’exécution :**
+> ```
+> Comment tu vas ? Bien
+> Comment tu vas ? Bof
+> Comment tu vas ? Nickel !
+> Comment tu vas ? Bien merci et toi ?
+> Très bien, merci de demander !
+> ```
+
+La fonction `randint(min, max)` du module `random` permet de tirer un nombre entier aléatoire entre `min` et `max` (compris).
+Voici un exemple où le programme tire un nombre aléatoire entre 1 et 100.
+```python
+import random
+
+n = random.randint(1, 100)
+print(a)
+```
+
+> ### Exercice 20 - Devine mon nombre
+> 
+> Ecrivez un programme qui permet de jouer à "Devine mon nombre":
+> 1. Laissez le programme tirer un nombre aléatoire entre 1 et 50.
+> 2. Demandez à l'utilisateur de proposer un nombre tant qu'il n'a pas trouvé le bon.
+> 3. A chaque proposition de nombre, le programme affiche "Plus grand" ou "Plus petit" pour aider le joueur.
+> 4. (Facultatif) Comptez le nombre de coups nécessaires pour trouver le bon nombre.
+> 
+> **Exemple d’exécution :**
+> ```
+> Devine mon nombre: 32
+> Plus grand
+> Devine mon nombre: 43
+> Plus petit
+> ...
+> Devine mon nombre: 38
+> Gagné, c'était bien 38 ! (Il vous a fallu 6 coups)
+> ```
+
+
+
 
 ---
 
