@@ -10,12 +10,12 @@ Il faut plutôt le voir comme un **sous-programme** auquel on fournit des objets
 
 Pour définir une fonction, il faut indiquer les éléments suivants :
 1. Le mot-clé `def` suivi du nom de la fonction puis de deux points (:).
-2. Les arguments, ou variables d’entrée, qui indiquent quels sont les objets à fournir à la fonction pour que le programme puisse l’exécuter. Certaines fonctions ne prennent aucun argument.
+2. Les arguments, ou variables d’entrée, qui indiquent quels sont **les objets à fournir** à la fonction pour que le programme puisse l’exécuter. Certaines fonctions ne prennent aucun argument.
 3. La liste des instructions de la fonction, autrement dit, le sous-programme effectué par la fonction. La liste des instructions est indentée par rapport au programme principal, c’est-à-dire qu’elle est **décalée à droite**. Une liste d’instruction est aussi appelée un bloc d’instruction.
 4. Dans le cas où la fonction retourne un résultat, il est nécessaire d’utiliser le mot-clé `return` suivi de l’objet à retourner.
 
 Ces quatre éléments constituent la définition de la fonction.
-Une fois une fonction ainsi définie, on peut l’utiliser (l’appeler) autant de fois que l’on désire dans un programme.
+**Une fois une fonction ainsi définie, on peut l’utiliser (l’appeler) autant de fois que l’on désire dans un programme**.
 
 Voici la syntaxe générale pour définir une fonction :
 ```python
@@ -77,7 +77,7 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 
 > ### <span style="background-color:#c6d9f7"> Exercice 14 - IMC </span>
 >
-> L’indice de masse corporelle (IMC) d’une personne est donné par son poids (en kg) divisé par le carré de sa taille (en mètres).  
+> L’indice de masse corporelle (IMC) d’une personne est donné par son poids (en kg) divisé par le carré de sa taille (en mètres).
 > Ecrivez une fonction qui prend le poids et la taille en argument et retourne l’IMC.  
 > Utilisez cette fonction dans un programme qui demande son poids et sa taille à l’utilisateur et affiche son IMC dans le terminal.  
 > 
