@@ -47,8 +47,7 @@ a = au_cube(2)
 b = au_cube(5)
 print(f"Les cubes de 2 et 5 sont {a} et {b}")
 ```
-L’exemple ci-dessus montre la définition d’une fonction nommée au_cube pre-
-nant 1 argument et retournant le cube de cet argument.
+L’exemple ci-dessus montre la définition d’une fonction nommée au_cube prenant 1 argument et retournant le cube de cet argument.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 12 - Première fonction </span>
 >
@@ -62,9 +61,8 @@ def saluer(prenom, nom):
 	
 saluer("Pierre", "Schmutz")
 ```
-L’exemple ci-dessus montre la définition d’une fonction qui ne retourne au-
-cune valeur : la fonction ne se termine pas par le mot-clé return. La fonction
-s’exécute (elle affiche des choses) mais ne retourne rien.
+L’exemple ci-dessus montre la définition d’une fonction qui ne retourne aucune valeur : la fonction ne se termine pas par le mot-clé return. 
+La fonction s’exécute (elle affiche des choses) mais ne retourne rien.
 
 Notez que les arguments doivent être donnés dans le même ordre que dans la
 définition de la fonction afin que le programme sache quelle entrée correspond
@@ -92,10 +90,13 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > Ecrivez une fonction qui prend le poids et la taille en argument et retourne l’IMC.
 > Utilisez cette fonction dans un programme qui demande son poids et sa taille (en mètres) à l’utilisateur et affiche son IMC dans le terminal.
 > 
-> *Exemple d’exécution :*
+> **Exemple d’exécution :**
+> ```
 > Entrez votre poids (kg) : 84
 > Entrez votre taille (m) : 1.84
-> Votre IMC est de 24.8109640831758
+> Votre IMC est de 24.810964083175
+> ```
+
 
 ### Exercices Turtle (facultatif)
 
