@@ -29,12 +29,12 @@ L’indentation du texte (le décalage à droite) est importante.
 Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.
 (L'indentation se fait de préférence avec la touche tabulation du clavier.)
 
-> ### Exercice 15 - Jeune ou vieux ?
+> ### <span style="background-color:#c6d9f7">  Exercice 15 - Jeune ou vieux ?
 > 
 > Ecrivez un programme qui demande son âge à l’utilisateur. 
 > Si l’utilisateur donne un nombre inférieur à 20, le programme écrit "Comme vous êtes jeune !", sinon il écrit "Comme vous êtes vieux !".
 
-> ### Exercice 16 - Maximum
+> ### <span style="background-color:#c6d9f7">  Exercice 16 - Maximum
 > 
 > Ecrivez la fonction maximum(a, b) qui prend 2 nombres en argument et retourne le plus grand.
 
@@ -56,7 +56,7 @@ else:
 	print("Je vais courir dehors")
 ```
 
-> ### Exercice 17 - Gagné, perdu ou match nul ?
+> ### <span style="background-color:#c6d9f7">  Exercice 17 - Gagné, perdu ou match nul ?
 > 
 > Ecrivez un programme qui demande à l'utilisateur d'entrer les buts de l'équipe domicile et de l'équipe extérieur.
 > Le programme affiche ensuite quelle équipe a gagné le match (ou match nul en cas d'égalité).
@@ -89,13 +89,14 @@ Puis, tant qu’elle est inférieure à 100, on l’affiche à l’écran et on 
 Ainsi, `a` passera de 1 à 2 à 4 à 8, etc. 
 Le programme imprime donc toute les puissances de deux inférieures à 100.
 
-> ### Exercice 18 - La puissance du 10
+> ### <span style="background-color:#c6d9f7">  Exercice 18 - La puissance du 10
 > 
 > Modifier le programme ci-dessus pour qu’il imprime toutes les puissances de 10 inférieures ou égales à 10000.
 
-> ### Exercice 19 - Comment ça va ?
+> ### <span style="background-color:#c6d9f7">  Exercice 19 - Comment ça va ?
 > 
 > Ecrivez un programme qui demande en boucle à l'utilisateur comment il va tant qu'il ne répond pas "Bien merci et toi ?".
+> Rappel: la fonction `input()` permet de demander à l'utilisateur d'entrer du texte.
 >
 > **Exemple d’exécution :**
 > ```
@@ -115,7 +116,7 @@ n = random.randint(1, 100)
 print(a)
 ```
 
-> ### Exercice 20 - Devine mon nombre
+> ### <span style="background-color:#c6d9f7">  Exercice 20 - Devine mon nombre
 > 
 > Ecrivez un programme qui permet de jouer à "Devine mon nombre":
 > 1. Laissez le programme tirer un nombre aléatoire entre 1 et 50.
