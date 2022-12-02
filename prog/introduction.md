@@ -1,8 +1,10 @@
 # Introduction
 
-[Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
+[Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
-### Votre tout premier programme
+## Votre tout premier programme
+
+Lors de ces travaux pratiques, vous allez écrire des petits programmes Python sur l’IDE **Thonny** qui est déjà installé sur les machines de l’école.
 
 Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
 ```python
@@ -14,12 +16,13 @@ En anglais, "print" signifie “imprime". En Python, l’instruction print deman
 >
 > Ecrivez et exécutez le programme ci-dessus sur `Thonny`.
 > Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !"
+> Sauvegardez le fichier exercice1.py dans votre dossier personnel.
 
-### Les commentaires
+## Les commentaires
 
 Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
 En Python un commentaire est introduit par le caractère \#. 
-Tout ce qui vient après et jusqu’à la fin de la ligne, n’est pas lu par l’ordinateur.
+Tout ce qui vient après et jusqu’à la fin de la ligne n’est pas lu par l’ordinateur.
 Cela sert uniquement à l’humain qui va lire le programme.
 ```python
 # un tout petit programme
@@ -35,7 +38,8 @@ print("bonjour") # salutations
 > 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
 
-### Exercices turtle
+### Exercices Turtle (facultatif)
+
 `turtle` est un module Python permettant de faire du dessin en codant. La tortue peut se déplacer et dessiner une trace avec les 4 fonctions :
 1. `forward(d)` pour avancer d’une distance `d` (en pixels).
 2. `backward(d)` pour reculer.
@@ -59,7 +63,7 @@ turtle.done() # Termine le dessin
 ```
 Si vous êtes curieux, la plateforme <a href="https://apprendre.modulo-info.ch/prog1/dessiner.html">Modulo</a> propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
+> ### <span style="background-color:#A8D6C2"> Exercice Turtle 1 </span>
 > Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels. (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
 
 
