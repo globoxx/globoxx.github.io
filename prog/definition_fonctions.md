@@ -44,15 +44,15 @@ L’exemple ci-dessus montre la définition d’une fonction nommée `au_cube` p
 
 > ### <span style="background-color:#c6d9f7"> Exercice 12 - Première fonction </span>
 >
-> Ecrivez une fonction `au_carre(n)` qui calcule le carré d’un nombre et le retourne. 
-> Utiliser cette fonction pour calculer et afficher le carré des nombres 6, -5 et 573.28.
+> Ecrivez une fonction `au_carre(n)` qui calcule le carré d’un nombre et le retourne.  
+> Utilisez cette fonction pour calculer et afficher le carré des nombres 6, -5 et 573.28.
 
 L’exemple suivant montre la définition d’une fonction qui ne retourne aucune valeur: la fonction ne se termine pas par le mot-clé `return`. 
-La fonction s’exécute (elle affiche des choses) mais ne retourne rien.
+La fonction s’exécute (ici elle affiche des choses) mais ne retourne rien.
 ```python
 def saluer(prenom, nom):
 	print(f"Bonjour {prenom} {nom}")
-	print("Bienvenue")
+	print("Bienvenue !")
 	
 saluer("Pierre", "Schmutz")
 ```
@@ -61,7 +61,7 @@ Notez que les arguments doivent être donnés **dans le même ordre que dans la 
 
 > ### <span style="background-color:#c6d9f7"> Exercice 13 - Salutations </span>
 >
-> Modifiez l’exemple ci-dessus pour ajouter un troisième argument de votre choix à la fonction saluer.
+> Modifiez l’exemple ci-dessus pour ajouter un troisième argument de votre choix à la fonction `saluer`.  
 > Faites en sorte que la fonction utilise ce nouvel argument dans son message de bienvenue puis appelez la fonction.
 
 ```python
@@ -77,9 +77,9 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 
 > ### <span style="background-color:#c6d9f7"> Exercice 14 - IMC </span>
 >
-> L’indice de masse corporelle (IMC) d’une personne est donné par son poids (en kg) divisé par le carré de sa taille (en mètres).
-> Ecrivez une fonction qui prend le poids et la taille en argument et retourne l’IMC.
-> Utilisez cette fonction dans un programme qui demande son poids et sa taille à l’utilisateur et affiche son IMC dans le terminal.
+> L’indice de masse corporelle (IMC) d’une personne est donné par son poids (en kg) divisé par le carré de sa taille (en mètres).  
+> Ecrivez une fonction qui prend le poids et la taille en argument et retourne l’IMC.  
+> Utilisez cette fonction dans un programme qui demande son poids et sa taille à l’utilisateur et affiche son IMC dans le terminal.  
 > 
 > **Exemple d’exécution :**
 > ```

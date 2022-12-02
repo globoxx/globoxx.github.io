@@ -93,8 +93,8 @@ Le programme imprime donc toute les puissances de deux inférieures à 100.
 
 > ### <span style="background-color:#c6d9f7">  Exercice 19 - Comment ça va ?
 > 
-> Ecrivez un programme qui demande en boucle à l'utilisateur comment il va tant qu'il ne répond pas "Bien merci et toi ?".
-> Rappel: la fonction `input()` permet de demander à l'utilisateur d'entrer du texte.
+> Ecrivez un programme qui demande en boucle à l'utilisateur comment il va tant qu'il ne répond pas "Bien merci et toi ?".  
+> Rappel: la fonction `input` permet de demander à l'utilisateur d'entrer du texte.
 >
 > **Exemple d’exécution :**
 > ```
