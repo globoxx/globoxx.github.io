@@ -8,21 +8,21 @@ Une variable est une valeur nommée et stockée en mémoire qui va varier au cou
 En Python, les types de variables de base sont les suivants :
 1. Les nombre entiers, appelés **int**: 2, 45, -4, 56.
 2. Les nombres à virgules, appelés **float**: 2.3, 6.5, 78.9, -89.0. La décimale est indiquée par un point (et non une virgule) comme cela est l’usage dans les pays anglo-saxons.
-3. Les chaines de caractères, appelés **str** (pour string, chaîne): "bonjour", "au revoir", "3432", "232.543". Il s’agit simplements d’une suite de caractères (lettre, chiffre, signe de ponctuation, espace) placées entre guillemets ("") ou, de manière équivalente, entre apostrophes (”).
+3. Les chaines de caractères, appelés **str** (pour string, chaîne): "bonjour", "au revoir", "3432", "232.543". Il s’agit simplements d’une suite de caractères placées entre guillemets ("") ou entre apostrophes ('').
 4. Les booléens, appelés **bool**: True, False. Ce type de variable ne peut prendre que deux valeurs : True (vrai) et False (faux), à écrire avec une majuscule.
 Il est possible de vérifier le type d’une variable à l’aide de la fonction `type`.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
 >
-> Quel est le type des valeurs suivantes ?
-> Vous pouvez utiliser la fonction `type` pour vérifier vos réponses (par exemple : `print(type("rewr")`).
-> a) "rewr"
-> b) 34
-> c) 5.0
-> d) ’julien34’
-> e) "65.5"
-> f) True
-> g) "False"
+> Quel est le type des valeurs suivantes ?  
+> Vous pouvez utiliser la fonction `type` pour vérifier vos réponses (par exemple : `print(type("rewr")`).  
+> a) "rewr"  
+> b) 34  
+> c) 5.0  
+> d) ’julien34’  
+> e) "65.5"  
+> f) True  
+> g) "False"  
 > h) rewr
 
 ## Les opérateurs
@@ -32,10 +32,11 @@ Pour les nombres entiers, les opérateurs suivants sont les plus courants :
 * \+ (addition),
 * \- (soustraction)
 * \* (multiplication)
-* \/ (division)
-* \/\/ (division entière)
+* / (division)
+* // (division entière)
 * % (modulo ou reste de la division entière)
-Toutes les opérations ci-dessus retournent un nombre entier, sauf la division (\/) qui retourne un nombre à virgule.
+
+Toutes les opérations ci-dessus retournent un nombre entier, sauf la division (/) qui retourne un nombre à virgule.
 Les opérateurs similaires sont définis pour les nombres à virgules.
 Il existe également les opérateurs de comparaison qui retournent des booléens (True ou False):
 * \> (plus grand que)
@@ -44,10 +45,12 @@ Il existe également les opérateurs de comparaison qui retournent des booléens
 * \<= (plus petit ou égal à)
 * == (égal à)
 * != (non égal à)
+
 Enfin, les opérateur logiques suivants sont définis sur les booléens:
 * and (et)
 * or (ou)
 * not (non)
+
 Les opérateurs sur les nombres suivent le même ordre de priorité qu’en mathématique.
 Les opérateurs arithmétiques ont la priorité sur les autres types d’opérateurs.
 Il est fortement recommendé d’utiliser les parenthèses pour clarifier l’ordre des opérations en cas de doute.
@@ -70,16 +73,17 @@ Dans cet exemple, on demande à l’ordinateur d’écrire le contenu de a dans 
 > ### <span style="background-color:#c6d9f7"> Exercice 4 </span>
 > 
 > Python ne permet pas d’utiliser n’importe quel nom de variable.  
-> Essayez d’utiliser les noms suivants pour nommer vos variables :
-> a) 38b
-> b) ’variable’
-> c) mon age
-> d) def
-> Par exemple, écrivez `38b = 5`.
+> Essayez d’utiliser les noms suivants pour nommer vos variables:  
+> a) 38b  
+> b) ’variable’  
+> c) mon age  
+> d) def  
+> Par exemple, écrivez `38b = 5`.  
 > Lancez votre programme. Qu’observez-vous ?
 
 Les noms de variable ne peuvent pas commencer par un chiffre, ni contenir d’accent, d’apostrophe, de guillement d’espace ou de caractères spéciaux.
 Il y a également quelques mot-clés réservés par Python (ex : def, for, in, return, etc.) qui ne peuvent pas être utilisés (nous verrons plus tard à quoi sont réservés ces mots).
+
 Chaque nom ne peut correspondre qu’à une seule variable, donc si on redonne un nom déjà utilisé, l’ancienne variable désignée par ce nom est oubliée.
 Autrement dit, l’ancienne valeur de la variable est remplacée par la nouvelle valeur.
 
@@ -115,14 +119,14 @@ La seconde instruction multiplie `b` par 2 (ce qui donne 10), puis le résultat 
 > x = 2			x = 2			x = 2
 > y = 3			y = 3			y = 3
 > x = y			y = x			x = x == y
-> print(x, y)	print(x, y)		print(x, y)
+> print(x, y)		print(x, y)			print(x, y)
 >
 >
 > x = 2			x = 2			x = 2
 > y = 5			y = 3			y = 3
-> x = y // x	y = x % y		x = x < y
+> x = y // x		y = x % y			x = x < y
 > y = y * y		x = x * 2		y = not x
-> print(x, y)	print(x, y)		print(x, y)
+> print(x, y)		print(x, y)			print(x, y)
 >```
 
 Dans un programme écrit correctement, les noms des variables doivent toujours représenter au mieux l’utilité de la variable.
@@ -148,7 +152,7 @@ Sans cela, il deviendrait rapidement illisible.
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 2 </span>
 > Ecrivez un programme qui dessine une maison (un carré avec un triangle sur la tête).
-> Vous êtes conseillés de reprendre les exemples et exercices Turtle du 1er chapitre et de les combiner.
+> Vous êtes conseillés de reprendre les exemples et exercices Turtle du 1er chapitre et de les combiner.  
 > Utilisez des variables pour éviter d’avoir à écrire plusieurs fois les mêmes chiffres (ex : `forward(d)` au lieu de `forward(100)`).
 
 
