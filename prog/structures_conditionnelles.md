@@ -1,14 +1,12 @@
-# Introduction
+# Les structures conditionnelles
 
-[Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
-
-### Les structures conditionnelles
+[Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
 Les structures de contrôle sont un élément central de la programmation.
 Elles permettent de moduler l’exécution d'un programme selon la valeur de ses variables.
 Les structures de contrôle se retrouvent de façon presque identique dans les autres langages de programmation.
 
-### L'instruction if
+## L'instruction if
 
 L’instruction `if` (si, en anglais) permet d’effectuer une liste d’instructions uniquement si une valeur booléenne (appelée la condition) est True (vraie) et une autre liste d’instruction sinon.
 ```python
@@ -72,7 +70,7 @@ else:
 > Match nul !
 > ```
 
-### L'instruction while
+## L'instruction while
 
 L’instruction while (qui signifie "tant que" en anglais) permet de répéter
 un bloc d’instructions tant qu’une condition est remplie.
@@ -134,8 +132,6 @@ print(a)
 > Devine mon nombre: 38
 > Gagné, c'était bien 38 ! (Il vous a fallu 6 coups)
 > ```
-
-
 
 
 ---

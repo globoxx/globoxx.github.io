@@ -1,18 +1,18 @@
 # Introduction
 
-[Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
+[Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
-### La définition de fonction
+## Définir ses propres fonctions
 
-Il est souvent utile d’écrire ses propres fonctions, afin de ne pas avoir à écrire plusieurs fois le même bout de code.
+Il est souvent utile d’écrire ses propres fonctions, **afin de ne pas avoir à écrire plusieurs fois le même bout de code**.
 En programmation, le concept de fonction n’est pas exactement le même qu’en mathématiques.
-Il faut plutôt le voir comme un sous-programme auquel on fournit des objets et qui peut en retourner d’autres.
+Il faut plutôt le voir comme un **sous-programme** auquel on fournit des objets et qui peut en retourner d’autres.
 
 Pour définir une fonction, il faut indiquer les éléments suivants :
-1. Le mot-clé def suivi du nom de la fonction puis de deux points (:).
+1. Le mot-clé `def` suivi du nom de la fonction puis de deux points (:).
 2. Les arguments, ou variables d’entrée, qui indiquent quels sont les objets à fournir à la fonction pour que le programme puisse l’exécuter. Certaines fonctions ne prennent aucun argument.
-3. La liste des instructions de la fonction, autrement dit, le sous-programme effectué par la fonction. La liste des instructions est indentée par rapport au programme principal, c’est-à-dire qu’elle est décalée à droite. Une liste d’instruction est aussi appelée un bloc d’instruction.
-4. Dans le cas où la fonction retourne un résultat, il est nécessaire d’utiliser le mot-clé return suivi de l’objet à retourner.
+3. La liste des instructions de la fonction, autrement dit, le sous-programme effectué par la fonction. La liste des instructions est indentée par rapport au programme principal, c’est-à-dire qu’elle est **décalée à droite**. Une liste d’instruction est aussi appelée un bloc d’instruction.
+4. Dans le cas où la fonction retourne un résultat, il est nécessaire d’utiliser le mot-clé `return` suivi de l’objet à retourner.
 
 Ces quatre éléments constituent la définition de la fonction.
 Une fois une fonction ainsi définie, on peut l’utiliser (l’appeler) autant de fois que l’on désire dans un programme.
@@ -40,14 +40,14 @@ a = au_cube(2)
 b = au_cube(5)
 print(f"Les cubes de 2 et 5 sont {a} et {b}")
 ```
-L’exemple ci-dessus montre la définition d’une fonction nommée au_cube prenant 1 argument et retournant le cube de cet argument.
+L’exemple ci-dessus montre la définition d’une fonction nommée `au_cube` prenant 1 argument et retournant le cube de cet argument.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 12 - Première fonction </span>
 >
-> Ecrivez une fonction au_carre qui calcule le carré d’un nombre et le retourne. 
+> Ecrivez une fonction `au_carre(n)` qui calcule le carré d’un nombre et le retourne. 
 > Utiliser cette fonction pour calculer et afficher le carré des nombres 6, -5 et 573.28.
 
-L’exemple suivant montre la définition d’une fonction qui ne retourne aucune valeur : la fonction ne se termine pas par le mot-clé return. 
+L’exemple suivant montre la définition d’une fonction qui ne retourne aucune valeur: la fonction ne se termine pas par le mot-clé `return`. 
 La fonction s’exécute (elle affiche des choses) mais ne retourne rien.
 ```python
 def saluer(prenom, nom):
@@ -57,9 +57,7 @@ def saluer(prenom, nom):
 saluer("Pierre", "Schmutz")
 ```
 
-Notez que les arguments doivent être donnés dans le même ordre que dans la
-définition de la fonction afin que le programme sache quelle entrée correspond
-à quel argument.
+Notez que les arguments doivent être donnés **dans le même ordre que dans la définition** de la fonction afin que le programme sache quelle entrée correspond à quel argument.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 13 - Salutations </span>
 >
@@ -91,15 +89,14 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > ```
 >
 
-
 ### Exercices Turtle (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 4 - Une maison fonctionnelle </span>
 >
 > Il est temps d’améliorer notre code permettant de dessiner une maison grâce aux fonctions !
-> 1. Ecrivez une fonction carre(taille) qui dessine un carré de la taille passée en argument.
-> 2. Ecrivez une fonction triangle(taille) qui dessine un triangle équilatéral avec la taille passée en argument.
-> 3. Enfin, écrivez une fonction maison(taille) qui appelle les 2 fonctions précédentes pour dessiner une maison de la taille passée en argument.
+> 1. Ecrivez une fonction `carre(taille)` qui dessine un carré de la taille passée en argument.
+> 2. Ecrivez une fonction `triangle(taille)` qui dessine un triangle équilatéral avec la taille passée en argument.
+> 3. Enfin, écrivez une fonction `maison(taille)` qui appelle les 2 fonctions précédentes pour dessiner une maison de la taille passée en argument.
 
 ---
 
