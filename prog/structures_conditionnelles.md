@@ -2,66 +2,73 @@
 
 [Mémento](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
 
-### Votre tout premier programme
+### Les structures conditionnelles
 
-Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
+Les structures de contrôle sont un élément central de la programmation.
+Elles permettent de moduler l’exécution d'un programme selon la valeur de ces variables.
+Les structures de contrôle se retrouvent de façon presque identique dans les autres langages de programmation.
+
+### L'instruction if
+
+L’instruction `if` (si, en anglais) permet d’effectuer une liste d’instructions uniquement si une valeur booléenne (appelée la condition) est True (vraie) et une autre liste d’instruction sinon.
 ```python
-print("bonjour")
-```
-En anglais, "print" signifie “imprime". En Python, l’instruction print demande à l’ordinateur d’afficher à l’écran le contenu de la parenthèse qui vient après.
-
-> ### <span style="background-color:#c6d9f7"> Exercice 1 </span>
->
-> Ecrivez et exécutez le programme ci-dessus sur `Thonny`.
-> Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !"
-
-### Les commentaires
-
-Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
-En Python un commentaire est introduit par le caractère \#. 
-Tout ce qui vient après et jusqu’à la fin de la ligne, n’est pas lu par l’ordinateur.
-Cela sert uniquement à l’humain qui va lire le programme.
-```python
-# un tout petit programme
-print("bonjour") # salutations
+ok = True
+if ok:
+	print("la variable ok est vraie")
+else:
+	print("la variable ok est fausse")
 ```
 
-> ### <span style="background-color:#c6d9f7"> Exercice 2 </span>
+Dans l’exemple ci-dessus, on définit la variable booléenne `ok` à True (vrai).
+L’instruction `if` teste cette variable. 
+Si elle est vraie, le bloc d’instructions (décalé à droite) qui vient après les deux points est exécuté. 
+Le bloc `else` (sinon, en français) est exécuté si la condition du `if` n’est pas respectée.
+Notez que le bloc `else` n'est pas obligatoire.
+
+L’indentation du texte (c’est-à-dire où la ligne commence) est importante.
+Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.
+(L'indentation se fait de préférence avec la touche tabulation du clavier.)
+
+> ### <span style="background-color:#c6d9f7"> Exercice 15 - T'es jeune ou pas ? </span>
 > 
-> Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
+> Ecrivez un programme qui demande son âge à l’utilisateur. 
+> Si l’utilisateur donne un nombre inférieur à 20, le programme écrit "Comme vous êtes jeune !", sinon il écrit "Comme vous êtes vieux !".
+
+> ### <span style="background-color:#c6d9f7"> Exercice 16 - Maximum </span>
 > 
-> <details><summary markdown="span">Solution</summary>
-> 	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
-> </details>
+> Ecrivez la fonction maximum(a, b) qui prend 2 nombres en argument et retourne le plus grand.
 
-### Exercices turtle
-`turtle` est un module Python permettant de faire du dessin en codant. La tortue peut se déplacer et dessiner une trace avec les 4 fonctions :
-1. `forward(d)` pour avancer d’une distance `d` (en pixels).
-2. `backward(d)` pour reculer.
-3. `left(a)` pour tourner à gauche d’un angle `a` (en degrés).
-4. `right(a)` pour tourner à droite
-
-Ce code permet de dessiner un carré, testez-le !
+Le bloc `elif` peut être ajouté après le bloc `if` pour tester des conditions supplémentaires.
+Notez que `elif` est la contraction de else if (sinon si, en français).
+L'exemple suivant 
 ```python
-import turtle # Importe le module
-
-turtle.forward(100) # Avance de 100 pixels
-turtle.left(90) # Tourne a gauche de 90 degres
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(90)
-
-turtle.done() # Termine le dessin
+ok = True
+if ok:
+	print("la variable ok est vraie")
+else:
+	print("la variable ok est fausse")
 ```
-Si vous êtes curieux, la plateforme <a href="https://apprendre.modulo-info.ch/prog1/dessiner.html">Modulo</a> propose beaucoup d’autres exemples et exercices dans son chapitre **Programmation**.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
-> Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels. (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
+### L'instruction while
 
+L’instruction while (qui signifie "tant que" en anglais) permet de répéter
+un bloc d’instructions tant qu’une condition est remplie.
+
+```python
+a = 1
+while a < 100:
+	print(a)
+a = a*2
+print(f"Maintenant a vaut {a} !")
+```
+Dans cet exemple, on initialise la variable `a` à 1.
+Puis, tant qu’elle est inférieure à 100, on l’affiche à l’écran et on la double. 
+Ainsi, `a` passera de 1 à 2 à 4 à 8, etc. 
+Le programme imprime donc toute les puissances de deux inférieures à 100.
+
+> ### <span style="background-color:#c6d9f7"> Exercice 17 - T'es jeune ou pas ? </span>
+> 
+> Modifier le programme ci-dessus pour qu’il imprime toutes les puissances de 10 inférieures ou égales à 10000.
 
 ---
 

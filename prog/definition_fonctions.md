@@ -4,25 +4,18 @@
 
 ### La définition de fonction
 
-Il est souvent utile d’écrire ses propres fonctions, afin de ne pas avoir à écrire
-plusieurs fois le même bout de code. En programmation, le concept de fonc-
-tion n’est pas exactement le même qu’en mathématiques. Il faut plutôt le voir
-comme un sous-programme auquel on fournit des objets et qui peut en retourner
-d’autres.
+Il est souvent utile d’écrire ses propres fonctions, afin de ne pas avoir à écrire plusieurs fois le même bout de code.
+En programmation, le concept de fonction n’est pas exactement le même qu’en mathématiques.
+Il faut plutôt le voir comme un sous-programme auquel on fournit des objets et qui peut en retourner d’autres.
+
 Pour définir une fonction, il faut indiquer les éléments suivants :
-1. Le mot-clé def suivi du nom de la fonction puis de deux points ( :).
-2. Les arguments, ou variables d’entrée, qui indiquent quels sont les objets à
-fournir à la fonction pour que le programme puisse l’exécuter. Certaines
-fonctions ne prennent aucun argument.
-3. La liste des instructions de la fonction, autrement dit, le sous-programme
-effectué par la fonction. La liste des instructions est indentée par rapport
-au programme principal, c’est-à-dire qu’elle est décalée à droite. Une liste
-d’instruction est aussi appelée un bloc d’instruction.
-4. Dans le cas où la fonction retourne un résultat, il est nécessaire d’utiliser
-le mot-clé return suivi de l’objet à retourner.
-Ces quatre éléments constituent la définition de la fonction. Une fois une
-fonction ainsi définie, on peut l’utiliser (l’appeler) autant de fois que l’on désire
-dans un programme.
+1. Le mot-clé def suivi du nom de la fonction puis de deux points (:).
+2. Les arguments, ou variables d’entrée, qui indiquent quels sont les objets à fournir à la fonction pour que le programme puisse l’exécuter. Certaines fonctions ne prennent aucun argument.
+3. La liste des instructions de la fonction, autrement dit, le sous-programme effectué par la fonction. La liste des instructions est indentée par rapport au programme principal, c’est-à-dire qu’elle est décalée à droite. Une liste d’instruction est aussi appelée un bloc d’instruction.
+4. Dans le cas où la fonction retourne un résultat, il est nécessaire d’utiliser le mot-clé return suivi de l’objet à retourner.
+
+Ces quatre éléments constituent la définition de la fonction.
+Une fois une fonction ainsi définie, on peut l’utiliser (l’appeler) autant de fois que l’on désire dans un programme.
 
 Voici la syntaxe générale pour définir une fonction :
 ```python
@@ -54,6 +47,8 @@ L’exemple ci-dessus montre la définition d’une fonction nommée au_cube pre
 > Ecrivez une fonction au_carre qui calcule le carré d’un nombre et le retourne. 
 > Utiliser cette fonction pour calculer et afficher le carré des nombres 6, -5 et 573.28.
 
+L’exemple suivant montre la définition d’une fonction qui ne retourne aucune valeur : la fonction ne se termine pas par le mot-clé return. 
+La fonction s’exécute (elle affiche des choses) mais ne retourne rien.
 ```python
 def saluer(prenom, nom):
 	print(f"Bonjour {prenom} {nom}")
@@ -61,8 +56,6 @@ def saluer(prenom, nom):
 	
 saluer("Pierre", "Schmutz")
 ```
-L’exemple ci-dessus montre la définition d’une fonction qui ne retourne aucune valeur : la fonction ne se termine pas par le mot-clé return. 
-La fonction s’exécute (elle affiche des choses) mais ne retourne rien.
 
 Notez que les arguments doivent être donnés dans le même ordre que dans la
 définition de la fonction afin que le programme sache quelle entrée correspond
@@ -88,7 +81,7 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 >
 > L’indice de masse corporelle (IMC) d’une personne est donné par son poids (en kg) divisé par le carré de sa taille (en mètres).
 > Ecrivez une fonction qui prend le poids et la taille en argument et retourne l’IMC.
-> Utilisez cette fonction dans un programme qui demande son poids et sa taille (en mètres) à l’utilisateur et affiche son IMC dans le terminal.
+> Utilisez cette fonction dans un programme qui demande son poids et sa taille à l’utilisateur et affiche son IMC dans le terminal.
 > 
 > **Exemple d’exécution :**
 > ```
@@ -100,7 +93,7 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 
 ### Exercices Turtle (facultatif)
 
-> ### <span style="background-color:#c6d9f7"> Exercice Turtle 4 - Une maison fonctionnelle </span>
+> ### <span style="background-color:#A8D6C2"> Exercice Turtle 4 - Une maison fonctionnelle </span>
 >
 > Il est temps d’améliorer notre code permettant de dessiner une maison grâce aux fonctions !
 > 1. Ecrivez une fonction carre(taille) qui dessine un carré de la taille passée en argument.
