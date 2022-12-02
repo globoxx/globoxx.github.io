@@ -30,7 +30,7 @@ print(a)
 
 Si vous ne donnez qu’un seul argument à la fonction `pow`, Python vous indiquera une erreur.
 
-Souvent, les fonctions retournent une valeur, qui contient le résultat de la fonction.
+**Souvent, les fonctions retournent une valeur qui contient le résultat de la fonction**.
 Dans l’exemple ci-dessus ce résultat (ici 8) est stocké dans la variable `a` puis affiché.
 La fonction `print` a ceci de spécial qu’elle peut accueillir zéro, un, ou plusieurs arguments.
 Chaque argument sera alors affiché et séparé par un espace.
@@ -42,7 +42,7 @@ print("a vaut", a, "et b vaut", b) # print a ici 4 arguments
 print(f"a vaut {a} et b vaut {b}") # print a ici 1 seul argument (un string formaté)
 ```
 
-Il est aussi possible d’utiliser ce qu’on appelle un f-string (pour string formaté) afin d’intégrer des variables à une chaîne de caractères.
+Il est aussi possible d’utiliser ce qu’on appelle un **f-string** (pour string formaté) afin d’intégrer des variables à une chaîne de caractères.
 Un string formaté a toujours la forme suivante : `f"...{var1}...{var2}..."` où `var1`, `var2`, etc sont des variables dont l’on veut afficher la valeur.
 Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 
@@ -50,7 +50,7 @@ Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 >
 > Ecrivez un programme qui calcule 3.5 à la puissance 5 et qui affiche le résultat à l’aide d’une phrase commençant par "3.5 à la puissance 5 vaut ...".
 
-Python contient un grand nombre de fonctions, et la plupart d’entre elles sont organisées au sein de **modules**, qui ne sont rien d’autre qu’une collection de fonctions.  
+Python contient un grand nombre de fonctions, et la plupart d’entre elles sont organisées au sein de **modules**, qui ne sont rien d’autre que des **collections de fonctions**.  
 Par exemple, le module `math` contient beaucoup de fonctions mathématiques, comme la fonction `sqrt` qui calcule la racine carrée (square root en anglais) d’un nombre.
 Pour utiliser ces fonctions, il faut d’abord importer le module grâce à l'instruction `import`.
 
@@ -79,7 +79,7 @@ nom = input("Entrez votre nom: ")
 print(f"Bonjour {nom}")
 ```
 
-Dans cet exemple, le programme va demander à la personne utilisatrice d’écrire son nom dans le terminal, puis assignera la chaîne de caractère entrée à la variable `nom`.
+Dans cet exemple, le programme va **demander** à la personne utilisatrice d’écrire son nom dans le terminal, puis assignera la chaîne de caractère entrée à la variable `nom`.
 Il affiche ensuite "Bonjour" suivi du nom donné par la personne utilisatrice.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 9 </span>
