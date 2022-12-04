@@ -5,7 +5,7 @@
 
 ## Votre tout premier programme
 
-Lors de ces travaux pratiques, vous allez écrire des petits programmes Python sur l’IDE **Thonny** qui est déjà installé sur les machines de l’école.
+Lors de ces travaux pratiques, vous allez écrire des petits programmes Python sur l’IDE **Thonny** qui est déjà installé sur les machines de l’école :thinking:
 
 Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
 ```python
@@ -23,7 +23,7 @@ En anglais, "print" signifie “imprime". En Python, l’instruction `print` dem
 > ```python
 > print('au revoir !')
 > ```
-> Assurez-vous de bien maîtriser la sauvegarde de vos fichiers !
+> Assurez-vous de bien maîtriser la sauvegarde de vos fichiers !  
 > Savoir sauvegarder et retrouver des fichiers dans les bons dossiers est primordial :wink:
 > </details>
 
@@ -43,8 +43,8 @@ print("bonjour") # salutations
 > Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
 
 > <details><summary markdown="span">Solution</summary>
-> Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher :thinking:
+> Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.  
+> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher :thinking:  
 > Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
 
