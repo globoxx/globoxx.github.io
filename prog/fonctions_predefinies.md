@@ -51,6 +51,14 @@ Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 >
 > Ecrivez un programme qui calcule 3.5 à la puissance 5 et qui affiche le résultat à l’aide d’une phrase commençant par "3.5 à la puissance 5 vaut ...".
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> resultat = 3.5 ** 5
+> # On pourrait aussi écrire: resultat = pow(3.5, 5)
+> print(f"3.5 à la puissance 5 vaut {resultat})
+> ```
+> </details>
+
 Python contient un grand nombre de fonctions, et la plupart d’entre elles sont organisées au sein de **modules**, qui ne sont rien d’autre que des **collections de fonctions**.  
 Par exemple, le module `math` contient beaucoup de fonctions mathématiques, comme la fonction `sqrt` qui calcule la racine carrée (square root en anglais) d’un nombre.
 Pour utiliser ces fonctions, il faut d’abord importer le module grâce à l'instruction `import`.
@@ -69,6 +77,15 @@ La description des fonctions du module `math` est disponible ici: [Module math](
 > Trouvez dans le lien ci-dessus la fonction permettant de calculer le sinus d’un nombre.
 > Ecrivez un programme calculant le sinus de 1 radian et affichant le résultat à l’écran.
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> import math
+> a = math.sin(1) # la fonction sin attend des angles en radians
+> print(a)
+> ```
+> Le [radian](https://fr.wikipedia.org/wiki/Radian){:target="_blank"} est l'unité d'angle du Système International.  
+> PI radians équivaut à 180 degrés.
+> </details>
 
 ## Les fonctions d'entrée (input)
 
@@ -87,6 +104,14 @@ Il affiche ensuite "Bonjour" suivi du nom donné par la personne utilisatrice.
 > 
 > Ecrivez un programme demandant d’abord le nom, puis le prénom de l’utilisateur ou l’utilisatrice et qui la salue ensuite avec son prénom et son nom.
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> nom = input("Entrez votre nom: ")
+> prenom = input("Entrez votre prénom: ")
+> print(f"Bonjour {prenom} {nom} !")
+> ```
+> </details>
+
 Si l’on souhaite que l’utilisateur rentre un nombre, il faudra convertir la chaîne de caractère rentrée soit en un nombre entier avec la fonction `int`, soit en nombre à virgule avec la fonction `float`.
 
 ```python
@@ -100,6 +125,15 @@ Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` ser
 > ### <span style="background-color:#c6d9f7"> Exercice 10 </span>
 > 
 > Ecrivez un programme qui demande d’entrer un nombre et affiche le carré de ce nombre dans le terminal.
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> n = float(input("Entrez un nombre: "))
+> resultat = n ** 2
+> print(f"Le carré de {n} est {resultat}")
+> ```
+> Faire la conversion du texte en nombre avec la fonction `float` permet de gérer le cas où l'utilisateur entrerait un nombre à virgule.
+> </details>
 
 > ### <span style="background-color:#c6d9f7"> Exercice 11 </span>
 > 
@@ -119,11 +153,59 @@ Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` ser
 > (Rappel : La circonférence d’un cercle est égale à pi fois son diamètre.  
 > La surface d’un cercle est égale à pi fois son rayon au carré.)
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> r = float(input('Entrez le rayon du cercle: '))
+> pi = 3.14
+> diametre = 2 * r
+> circonference = pi * diametre
+> surface = pi * r**2
+> print()
+> print(f'rayon = {r}')
+> print(f'diametre = {diametre}')
+> print(f'circonference = {circonference}')
+> print(f'surface = {surface}')
+> ```
+> </details>
+
 ### Exercices Turtle (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 3 </span>
 
 > Reprenez l’exercice Turtle du chapitre précédent mais permettez à l’utilisateur ou utilisatrice de choisir la taille de la maison grâce à la fonction prédéfinie `input`.
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> import turtle # Importe le module
+> 
+> d = int(input("Entrez la taille de la maison: ")) # On demande à l'utilisateur la taille de la maison
+> 
+> # On dessine le carré
+> turtle.forward(d) # Avance de 100 pixels
+> turtle.left(90) # Tourne a gauche de 90 degres
+> turtle.forward(d)
+> turtle.left(90)
+> turtle.forward(d)
+> turtle.left(90)
+> turtle.forward(d)
+> turtle.left(90)
+> 
+> # On se déplace au sommet du carré
+> turtle.left(90)
+> turtle.forward(d)
+> turtle.right(90)
+> 
+> # On dessine le triangle
+> turtle.forward(d) # Avance de 100 pixels
+> turtle.left(120) # Tourne a gauche de 120 degres (180-60)
+> turtle.forward(d)
+> turtle.left(120)
+> turtle.forward(d)
+> turtle.left(120)
+> 
+> turtle.done() # Termine le dessin
+> ```
+> </details>
 
 ---
 
