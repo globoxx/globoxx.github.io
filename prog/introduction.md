@@ -5,7 +5,7 @@
 
 ## Votre tout premier programme
 
-Lors de ces travaux pratiques, vous allez écrire des petits programmes Python sur l’IDE **Thonny** qui est déjà installé sur les machines de l’école 😀
+Lors de ces travaux pratiques, vous allez écrire des petits programmes Python sur l’IDE **Thonny** qui est déjà installé sur les machines de l’école.
 
 Voici un exemple d’un tout petit programme en Python qui ne contient qu’une seule instruction:
 ```python
@@ -44,7 +44,7 @@ print("bonjour") # salutations
 
 > <details><summary markdown="span">Solution</summary>
 > Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.  
-> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher 🤔 
+> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher 🤔  
 > Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
 
@@ -77,6 +77,21 @@ Si vous êtes curieux, la plateforme [Modulo](https://apprendre.modulo-info.ch/p
 >
 > Ecrivez un programme qui dessine un triangle équilatéral avec chaque côté ayant une longueur de 100 pixels.  
 > (Rappel : chaque angle d’un triangle équilatéral fait 60 degrés).
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> import turtle # Importe le module
+> 
+> turtle.forward(100) # Avance de 100 pixels
+> turtle.left(120) # Tourne a gauche de 120 degres (180-60)
+> turtle.forward(100)
+> turtle.left(120)
+> turtle.forward(100)
+> turtle.left(120)
+> 
+> turtle.done() # Termine le dessin
+> ```
+> </details>
 
 
 ---
