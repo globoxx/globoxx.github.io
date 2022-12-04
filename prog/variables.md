@@ -158,11 +158,11 @@ La seconde instruction multiplie `b` par 2 (ce qui donne 10), puis le résultat 
 >```
 
 > <details><summary markdown="span">Solution</summary>
-> a) 3, 3
-> b) 2, 2
-> c) False, 3
-> d) 2, 25
-> e) 2, 4
+> a) 3, 3  
+> b) 2, 2  
+> c) False, 3  
+> d) 2, 25  
+> e) 2, 4  
 > f) True, False
 > </details>
 
@@ -208,12 +208,12 @@ Sans cela, il deviendrait rapidement illisible.
 > turtle.left(90)
 > turtle.forward(d)
 > turtle.left(90)
-
+> 
 > # On se déplace au sommet du carré
 > turtle.left(90)
 > turtle.forward(100)
 > turtle.right(90)
-
+> 
 > # On reprend le code permettant de dessiner un triangle
 > turtle.forward(d) # Avance de 100 pixels
 > turtle.left(120) # Tourne a gauche de 120 degres (180-60)
