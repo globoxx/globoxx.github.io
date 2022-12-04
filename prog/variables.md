@@ -224,6 +224,7 @@ Sans cela, il deviendrait rapidement illisible.
 > 
 > turtle.done() # Termine le dessin
 > ```
+> Il existe évidemment de nombreuses manières d'arriver au même résultat !
 > </details>
 
 ---
