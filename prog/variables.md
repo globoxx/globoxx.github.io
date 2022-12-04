@@ -26,6 +26,17 @@ Il est possible de vérifier le type d’une variable à l’aide de la fonction
 > g) "False"  
 > h) rewr
 
+> <details><summary markdown="span">Solution</summary>
+> a) str
+> b) int
+> c) float
+> d) str
+> e) str
+> f) bool
+> g) str
+> h) ⚠️ erreur ⚠️ Il s'agit d'une variable (inconnue) ayant pour nom rewr.
+> </details>
+
 ## Les opérateurs
 
 Pour chaque type de variable, plusieurs opérateurs sont définis qui permettent de manipuler ces variables. 
@@ -81,6 +92,12 @@ Dans cet exemple, on demande à l’ordinateur d’écrire le contenu de `a` dan
 > d) def  
 > Par exemple, écrivez `38b = 5`.  
 > Lancez votre programme. Qu’observez-vous ?
+
+> <details><summary markdown="span">Solution</summary>
+> Tous ces noms de variables sont interdits et Python vous le fera savoir !  
+> Les règles expliquant le nommage de variables est expliqué juste au dessous.  
+> Plus d'informations [ici](https://python.sdv.univ-paris-diderot.fr/02_variables/#23-nommage){:target="_blank"} 😉
+> </details>
 
 **Les noms de variable ne peuvent pas commencer par un chiffre, ni contenir d’accent, d’apostrophe, de guillement d’espace ou de caractères spéciaux**.
 Il y a également quelques mot-clés réservés par Python (ex : `def`, `for`, `in`, `return`, etc.) qui ne peuvent pas être utilisés (nous verrons plus tard à quoi sont réservés ces mots).
