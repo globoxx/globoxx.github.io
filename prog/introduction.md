@@ -23,6 +23,8 @@ En anglais, "print" signifie “imprime". En Python, l’instruction `print` dem
 > ```python
 > print('au revoir !')
 > ```
+> Assurez-vous de bien maîtriser la sauvegarde de vos fichiers !
+> Savoir sauvegarder et retrouver des fichiers dans les bons dossiers est primordial :wink:
 > </details>
 
 ## Les commentaires
