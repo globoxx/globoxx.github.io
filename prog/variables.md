@@ -27,13 +27,13 @@ Il est possible de vérifier le type d’une variable à l’aide de la fonction
 > h) rewr
 
 > <details><summary markdown="span">Solution</summary>
-> a) str
-> b) int
-> c) float
-> d) str
-> e) str
-> f) bool
-> g) str
+> a) str  
+> b) int  
+> c) float  
+> d) str  
+> e) str  
+> f) bool  
+> g) str  
 > h) ⚠️ erreur ⚠️ Il s'agit d'une variable (inconnue) ayant pour nom rewr.
 > </details>
 
@@ -130,6 +130,15 @@ La seconde instruction multiplie `b` par 2 (ce qui donne 10), puis le résultat 
 > Mettez la valeur 6 dans une variable appelée `a`, affichez-la à l’écran puis divisez-la par trois et remettez-la dans `a`. 
 > Imprimez la nouvelle valeur de `a` à l’écran.
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> a = 6
+> print(a)
+> a = a / 3
+> print(a)
+> ```
+> </details>
+
 > ### <span style="background-color:#c6d9f7"> Exercice 6 </span>
 > 
 > Qu’impriment les petits programmes suivants ? 
@@ -147,6 +156,15 @@ La seconde instruction multiplie `b` par 2 (ce qui donne 10), puis le résultat 
 > y = y * y		x = x * 2		y = not x
 > print(x, y)		print(x, y)		print(x, y)
 >```
+
+> <details><summary markdown="span">Solution</summary>
+> a) 3, 3
+> b) 2, 2
+> c) False, 3
+> d) 2, 25
+> e) 2, 4
+> f) True, False
+> </details>
 
 Dans un programme écrit correctement, **les noms des variables doivent toujours représenter au mieux l’utilité de la variable**.
 
@@ -175,6 +193,38 @@ Sans cela, il deviendrait rapidement illisible.
 > Vous êtes conseillés de reprendre les exemples et exercices Turtle du 1er chapitre et de les combiner.  
 > Utilisez des variables pour éviter d’avoir à écrire plusieurs fois les mêmes chiffres (ex : `forward(d)` au lieu de `forward(100)`).
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> import turtle # Importe le module
+> 
+> d = 100 # On utilise une variable pour mémoriser la taille
+> 
+> # On reprend le code permettant de dessiner un carré
+> turtle.forward(d) # Avance de 100 pixels
+> turtle.left(90) # Tourne a gauche de 90 degres
+> turtle.forward(d)
+> turtle.left(90)
+> turtle.forward(d)
+> turtle.left(90)
+> turtle.forward(d)
+> turtle.left(90)
+
+> # On se déplace au sommet du carré
+> turtle.left(90)
+> turtle.forward(100)
+> turtle.right(90)
+
+> # On reprend le code permettant de dessiner un triangle
+> turtle.forward(d) # Avance de 100 pixels
+> turtle.left(120) # Tourne a gauche de 120 degres (180-60)
+> turtle.forward(d)
+> turtle.left(120)
+> turtle.forward(d)
+> turtle.left(120)
+> 
+> turtle.done() # Termine le dessin
+> ```
+> </details>
 
 ---
 
