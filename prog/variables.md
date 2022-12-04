@@ -188,7 +188,7 @@ Sans cela, il deviendrait rapidement illisible.
 ### Exercices Turtle (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 2 </span>
-
+> 
 > Ecrivez un programme qui dessine une maison (un carré avec un triangle sur la tête).
 > Vous êtes conseillés de reprendre les exemples et exercices Turtle du 1er chapitre et de les combiner.  
 > Utilisez des variables pour éviter d’avoir à écrire plusieurs fois les mêmes chiffres (ex : `forward(d)` au lieu de `forward(100)`).
@@ -211,7 +211,7 @@ Sans cela, il deviendrait rapidement illisible.
 > 
 > # On se déplace au sommet du carré
 > turtle.left(90)
-> turtle.forward(100)
+> turtle.forward(d)
 > turtle.right(90)
 > 
 > # On reprend le code permettant de dessiner un triangle
