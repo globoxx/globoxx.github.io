@@ -41,10 +41,11 @@ print("bonjour") # salutations
 > ### <span style="background-color:#c6d9f7"> Exercice 2 </span>
 > 
 > Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
-> 
+
 > <details><summary markdown="span">Solution</summary>
 > Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
+> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher :thinking:
+> Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
 
 ## Exercices Turtle (facultatif)
