@@ -40,7 +40,7 @@ Il est possible de vérifier le type d’une variable à l’aide de la fonction
 ## Les opérateurs
 
 Pour chaque type de variable, plusieurs opérateurs sont définis qui permettent de manipuler ces variables. 
-Pour les nombres entiers, les opérateurs suivants sont les plus courants :
+Pour les nombres entiers, les **opérateurs arithmétiques** suivants sont les plus courants :
 * \+ (addition),
 * \- (soustraction)
 * \* (multiplication)
@@ -50,7 +50,7 @@ Pour les nombres entiers, les opérateurs suivants sont les plus courants :
 
 Toutes les opérations ci-dessus retournent un nombre entier, sauf la division (/) qui retourne un nombre à virgule.
 Les opérateurs similaires sont définis pour les nombres à virgules.
-Il existe également les opérateurs de comparaison qui retournent des booléens (True ou False):
+Il existe également les **opérateurs de comparaison** qui retournent des booléens (True ou False):
 * \> (plus grand que)
 * \< (plus petit que)
 * \>= (plus grand ou égal à)
@@ -58,7 +58,7 @@ Il existe également les opérateurs de comparaison qui retournent des booléens
 * == (égal à)
 * != (non égal à)
 
-Enfin, les opérateur logiques suivants sont définis sur les booléens:
+Enfin, les **opérateur logiques** suivants sont définis sur les booléens:
 * and (et)
 * or (ou)
 * not (non)
