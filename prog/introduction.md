@@ -19,6 +19,12 @@ En anglais, "print" signifie “imprime". En Python, l’instruction `print` dem
 > Changez le texte pour que l’ordinateur écrive autre chose, par exemple "au revoir !".  
 > Sauvegardez le fichier exercice1.py dans votre dossier personnel.
 
+> <details><summary markdown="span">Solution</summary>
+>	```python
+>	print('au revoir !')
+>	```
+> </details>
+
 ## Les commentaires
 
 Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
