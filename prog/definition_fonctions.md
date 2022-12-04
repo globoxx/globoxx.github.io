@@ -1,6 +1,6 @@
 # Introduction
 
-[Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}
+[Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}  
 [Raccourcis clavier](https://support.apple.com/fr-ch/HT201236){:target="_blank"}
 
 ## Définir ses propres fonctions
