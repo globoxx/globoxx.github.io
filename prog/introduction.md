@@ -20,9 +20,9 @@ En anglais, "print" signifie “imprime". En Python, l’instruction `print` dem
 > Sauvegardez le fichier exercice1.py dans votre dossier personnel.
 
 > <details><summary markdown="span">Solution</summary>
->	```python
->	print('au revoir !')
->	```
+> ```python
+> print('au revoir !')
+> ```
 > </details>
 
 ## Les commentaires
@@ -41,8 +41,8 @@ print("bonjour") # salutations
 > Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
 > 
 > <details><summary markdown="span">Solution</summary>
-> 	Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
-> 	Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
+> Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.
+> Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher. Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
 
 ## Exercices Turtle (facultatif)
