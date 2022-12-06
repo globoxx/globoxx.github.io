@@ -122,6 +122,7 @@ print(a)
 > 2. Demandez à l'utilisateur de proposer un nombre tant qu'il n'a pas trouvé le bon.
 > 3. A chaque proposition de nombre, le programme affiche "Plus grand" ou "Plus petit" pour aider le joueur.
 > 4. (Facultatif) Comptez le nombre de coups nécessaires pour trouver le bon nombre.
+> 5. (Facultatif) Quelle est la meilleure stratégie pour deviner le nombre rapidement ?
 > 
 > **Exemple d’exécution :**
 > ```
