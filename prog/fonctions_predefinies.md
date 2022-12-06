@@ -3,10 +3,12 @@
 [Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}  
 [Raccourcis clavier](https://support.apple.com/fr-ch/HT201236){:target="_blank"}
 
-## C'est quoi une fonction ?
+## C'est quoi une fonction ? 🤨
 
 Python, comme tout autre langage de programmation, contient tout une séries de fonctions, c’est-à-dire **des instructions déjà définies qui font faire quelque chose de précis au programme**.
 Nous en avons déjà utilisés deux au chapitre précédent, la fonction `print` qui affiche quelque chose à l’écran et la fonction `type` qui retourne le type d’un objet.
+
+Elles permettent aux programmeurs de **gagner du temps en réutilisant du code déjà écrit une fois** 🙏
 
 **L’appel d’une fonction s’effectue en indiquant la nom de la fonction, suivi d’une paires de parenthèses**.
 Ces parenthèse contiennent les éventuels arguments de la fonction, c’est-à-dire les objets nécessaires pour que la fonction puisse être exécutée.
@@ -21,7 +23,7 @@ type(a) # calcule le type de a (str) mais n'affiche rien
 ```
 
 Dans l’exemple ci-dessus, chaque appel de fonction se fait en fournissant un argument.
-Cet argument peut soit être une valeur donnée directement (comme dans les deux premières lignes), soit une variable (ligne 4-5).
+Cet argument peut soit être une valeur donnée directement (comme dans les deux premières lignes), soit une variable (ligne 4-5).  
 Certaines fonctions prennent plus qu’un argument comme la fonction `pow` qui calcule la puissance de deux nombres, et qui a donc besoin de deux arguments.
 
 ```python
@@ -29,10 +31,10 @@ a = pow(2, 3) # calcule 2 puissance 3
 print(a)
 ```
 
-Si vous ne donnez qu’un seul argument à la fonction `pow`, Python vous indiquera une erreur.
+⚠️ Si vous ne donnez qu’un seul argument à la fonction `pow`, Python vous indiquera une erreur. ⚠️
 
 **Souvent, les fonctions retournent une valeur qui contient le résultat de la fonction**.
-Dans l’exemple ci-dessus ce résultat (ici 8) est stocké dans la variable `a` puis affiché.
+Dans l’exemple ci-dessus, ce résultat (ici 8) est stocké dans la variable `a` puis affiché.
 La fonction `print` a ceci de spécial qu’elle peut accueillir zéro, un, ou plusieurs arguments.
 Chaque argument sera alors affiché et séparé par un espace.
 
@@ -43,8 +45,8 @@ print("a vaut", a, "et b vaut", b) # print a ici 4 arguments
 print(f"a vaut {a} et b vaut {b}") # print a ici 1 seul argument (un string formaté)
 ```
 
-Il est aussi possible d’utiliser ce qu’on appelle un **f-string** (pour string formaté) afin d’intégrer des variables à une chaîne de caractères.
-Un string formaté a toujours la forme suivante : `f"...{var1}...{var2}..."` où `var1`, `var2`, etc sont des variables dont l’on veut afficher la valeur.
+Il est aussi possible d’utiliser ce qu’on appelle un **f-string** (pour string formaté) afin d’intégrer directement des variables à une chaîne de caractères.
+Un string formaté a toujours la forme suivante : `f"...{var1}...{var2}..."` où `var1`, `var2`, etc sont des variables dont l’on veut afficher la valeur.  
 Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 7 </span>
@@ -60,8 +62,8 @@ Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 > </details>
 
 Python contient un grand nombre de fonctions, et la plupart d’entre elles sont organisées au sein de **modules**, qui ne sont rien d’autre que des **collections de fonctions**.  
-Par exemple, le module `math` contient beaucoup de fonctions mathématiques, comme la fonction `sqrt` qui calcule la racine carrée (square root en anglais) d’un nombre.
-Pour utiliser ces fonctions, il faut d’abord importer le module grâce à l'instruction `import`.
+Par exemple, le module `math` contient beaucoup de fonctions mathématiques 🤓, comme la fonction `sqrt` qui calcule la racine carrée (square root en anglais) d’un nombre.
+Pour utiliser ces fonctions, il faut d’abord **importer le module** grâce à l'instruction `import`.
 
 ```python
 import math
@@ -70,7 +72,7 @@ a = math.sqrt(9) # calcule la racine carree
 
 La première ligne de l’exemple ci-dessus indique que l’on va utiliser les fonctions du module `math`.
 La seconde ligne utilise la fonction `sqrt` pour calculer la racine carrée de 9.
-La description des fonctions du module `math` est disponible ici: [Module math](https://docs.python.org/fr/3/library/math.html){:target="_blank"}.
+La description des fonctions du module `math` est disponible [ici](https://docs.python.org/fr/3/library/math.html){:target="_blank"}.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 8 </span>
 >
@@ -90,7 +92,7 @@ La description des fonctions du module `math` est disponible ici: [Module math](
 ## Les fonctions d'entrée (input)
 
 Une des fonctions les plus utiles est la fonction `input(phrase)` qui affiche `phrase` dans le terminal et **retourne la chaîne de caractères que l’utilisateur ou l’utilisatrice écrit dans le terminal**.
-Cela lui permet de donner des informations au programme, et le résultat du programme pourra ainsi dépendre des indications de la personne qui l’utilise.
+Cela lui permet de donner des informations au programme, et le résultat du programme pourra ainsi dépendre des indications de la personne qui l’utilise 😉
 
 ```python
 nom = input("Entrez votre nom: ")
@@ -112,7 +114,7 @@ Il affiche ensuite "Bonjour" suivi du nom donné par la personne utilisatrice.
 > ```
 > </details>
 
-Si l’on souhaite que l’utilisateur rentre un nombre, il faudra convertir la chaîne de caractère rentrée soit en un nombre entier avec la fonction `int`, soit en nombre à virgule avec la fonction `float`.
+Si l’on souhaite que l’utilisateur rentre un nombre, il faudra **convertir** la chaîne de caractère rentrée soit en un nombre entier avec la fonction `int`, soit en nombre à virgule avec la fonction `float`.
 
 ```python
 annee = int(input("Entrez votre annee de naissance: "))
@@ -120,7 +122,7 @@ age = 2022 - annee
 print(f"Vous avez {age} ans cette annee !")
 ```
 
-Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` sera une chaîne de caractère et la seconde ligne retournera une erreur car **Python ne sait pas comment soustraire une chaîne de caractère à un nombre** (faites le test !).
+Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` sera une chaîne de caractère et la seconde ligne retournera une erreur car **Python ne sait pas comment soustraire une chaîne de caractère à un nombre** 😵 (faites le test !).
 
 > ### <span style="background-color:#c6d9f7"> Exercice 10 </span>
 > 

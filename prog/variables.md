@@ -11,6 +11,7 @@ En Python, les types de variables de base sont les suivants :
 2. Les **nombres à virgules**, appelés **float**: 2.3, 6.5, 78.9, -89.0. La décimale est indiquée par un point (et non une virgule) comme cela est l’usage dans les pays anglo-saxons.
 3. Les **chaines de caractères**, appelés **str** (pour string, chaîne): "bonjour", "au revoir", "3432", "232.543". Il s’agit simplements d’une suite de caractères placées entre guillemets ("") ou entre apostrophes ('').
 4. Les **booléens**, appelés **bool**: True, False. Ce type de variable ne peut prendre que deux valeurs : True (vrai) et False (faux), à écrire avec une majuscule.  
+
 Il est possible de vérifier le type d’une variable à l’aide de la fonction `type` 😉
 
 > ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
@@ -27,13 +28,13 @@ Il est possible de vérifier le type d’une variable à l’aide de la fonction
 > h) rewr
 
 > <details><summary markdown="span">Solution</summary>
-> a) str  
-> b) int  
-> c) float  
-> d) str  
-> e) str  
-> f) bool  
-> g) str  
+> a) Chaîne de caractères (str)  
+> b) Nombre entier (int)  
+> c) Nombre à virgule (float)  
+> d) Chaîne de caractères (str)  
+> e) Chaîne de caractères (str)  
+> f) Valeur logique (bool)  
+> g) Chaîne de caractères (str)  
 > h) ⚠️ erreur ⚠️ Il s'agit d'une variable (inconnue) ayant pour nom rewr.
 > </details>
 
@@ -64,7 +65,7 @@ Enfin, les **opérateur logiques** suivants sont définis sur les booléens:
 * not (non)
 
 Les opérateurs sur les nombres **suivent le même ordre de priorité qu’en mathématique**.
-Les opérateurs arithmétiques ont la priorité sur les autres types d’opérateurs.
+Les opérateurs arithmétiques ont la priorité sur les autres types d’opérateurs.  
 Il est fortement recommendé d’utiliser les parenthèses pour clarifier l’ordre des opérations en cas de doute. 🤔
 
 ## Assignation de variables
@@ -85,7 +86,7 @@ Dans cet exemple, on demande à l’ordinateur d’écrire le contenu de `a` dan
 
 > ### <span style="background-color:#c6d9f7"> Exercice 4 </span>
 > 
-> ⚠️ Python ne permet pas d’utiliser n’importe quel nom de variable. ⚠️ 
+> ⚠️ Python ne permet pas d’utiliser n’importe quel nom de variable. ⚠️  
 > Essayez d’utiliser les noms suivants pour nommer vos variables:  
 > a) 38b  
 > b) ’variable’  
