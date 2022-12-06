@@ -4,8 +4,9 @@
 [Raccourcis clavier](https://support.apple.com/fr-ch/HT201236){:target="_blank"}
 
 Les structures de contrôle sont un élément central de la programmation.
-Elles permettent de moduler l’exécution d'un programme selon la valeur de ses variables.
-Les structures de contrôle se retrouvent de façon presque identique dans les autres langages de programmation.
+**Elles permettent de moduler l’exécution d'un programme selon la valeur de ses variables**.  
+Grâce aux structures conditionnelles, la complexité de vos programmes va pouvoir être décuplée ! 🤯  
+Les structures de contrôle se retrouvent de façon presque identique dans tous les autres langages de programmation.
 
 ## L'instruction if
 
@@ -19,16 +20,16 @@ else:
 ```
 
 Dans l’exemple ci-dessus, on définit la variable booléenne `ok` à True (vrai).
-L’instruction `if` teste cette variable. 
-Si elle est vraie, le bloc d’instructions (décalé à droite) qui vient après les deux points est exécuté. 
-Le bloc `else` (sinon, en français) est exécuté si la condition du `if` n’est pas respectée.
-Notez que le bloc `else` n'est pas obligatoire.
+L’instruction `if` teste cette variable.
+* Si elle est vraie, le bloc d’instructions (décalé à droite) qui vient après les deux points est exécuté. 
+* Sinon, le bloc `else` (sinon, en français) est exécuté à la place.
+⚠️ Notez que le bloc `else` n'est pas obligatoire. ⚠️
 
-L’indentation du texte (le décalage à droite) est importante.
+**L’indentation du texte (le décalage à droite) est importante**.
 Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.
-(L'indentation se fait de préférence avec la touche tabulation du clavier.)
+(L'indentation se fait de préférence avec la touche tabulation (**TAB**) du clavier.)
 
-> ### <span style="background-color:#c6d9f7">  Exercice 15 - Jeune ou vieux ?
+> ### <span style="background-color:#c6d9f7">  Exercice 15 - Jeune ou vieux ? 👴
 > 
 > Ecrivez un programme qui demande son âge à l’utilisateur. 
 > Si l’utilisateur donne un nombre inférieur à 20, le programme écrit "Comme vous êtes jeune !", sinon il écrit "Comme vous êtes vieux !".
@@ -37,8 +38,8 @@ Elle permet à l’ordinateur de savoir quelles sont les instructions qui appart
 > 
 > Ecrivez la fonction maximum(a, b) qui prend 2 nombres en argument et retourne le plus grand.
 
-Le bloc `elif` peut être ajouté après le bloc `if` pour tester des conditions supplémentaires.
-Notez que `elif` est la contraction de else if (sinon si, en français).
+Le bloc `elif` peut être ajouté après le bloc `if` pour **tester des conditions supplémentaires**.
+Notez que `elif` est la contraction de *else if* (sinon si, en français).
 L'exemple suivant démontre son utilité quand on a 4 situations possibles:
 ```python
 il_est_tard = False
@@ -55,7 +56,7 @@ else:
 	print("Je vais courir dehors")
 ```
 
-> ### <span style="background-color:#c6d9f7">  Exercice 17 - Gagné, perdu ou match nul ?
+> ### <span style="background-color:#c6d9f7">  Exercice 17 - Gagné, perdu ou match nul ? ⚽
 > 
 > Ecrivez un programme qui demande à l'utilisateur d'entrer les buts de l'équipe domicile et de l'équipe extérieur.
 > Le programme affiche ensuite quelle équipe a gagné le match (ou match nul en cas d'égalité).
@@ -73,8 +74,8 @@ else:
 
 ## L'instruction while
 
-L’instruction while (qui signifie "tant que" en anglais) permet de répéter
-un bloc d’instructions tant qu’une condition est remplie.
+L’instruction `while` (qui signifie "tant que" en anglais) permet de répéter un bloc d’instructions tant qu’une condition est remplie.   
+C'est extrêmement pratique pour réduire le nombre de lignes de code 😜
 
 ```python
 a = 1
@@ -86,13 +87,13 @@ print(f"Maintenant a vaut {a} !")
 Dans cet exemple, on initialise la variable `a` à 1.
 Puis, tant qu’elle est inférieure à 100, on l’affiche à l’écran et on la double. 
 Ainsi, `a` passera de 1 à 2 à 4 à 8, etc. 
-Le programme imprime donc toute les puissances de deux inférieures à 100.
+**Le programme imprime donc toute les puissances de deux inférieures à 100**.
 
 > ### <span style="background-color:#c6d9f7">  Exercice 18 - La puissance du 10
 > 
 > Modifier le programme ci-dessus pour qu’il imprime toutes les puissances de 10 inférieures ou égales à 10000.
 
-> ### <span style="background-color:#c6d9f7">  Exercice 19 - Comment ça va ?
+> ### <span style="background-color:#c6d9f7">  Exercice 19 - Comment ça va ? 👋
 > 
 > Ecrivez un programme qui demande en boucle à l'utilisateur comment il va tant qu'il ne répond pas "Bien merci et toi ?".  
 > Rappel: la fonction `input` permet de demander à l'utilisateur d'entrer du texte.
@@ -106,16 +107,16 @@ Le programme imprime donc toute les puissances de deux inférieures à 100.
 > Très bien, merci de demander !
 > ```
 
-La fonction `randint(min, max)` du module `random` permet de tirer un nombre entier aléatoire entre `min` et `max` (compris).
-Voici un exemple où le programme tire un nombre aléatoire entre 1 et 100.
+La fonction `randint(min, max)` du module `random` permet de tirer un nombre entier aléatoire entre `min` et `max` (compris).  
+Voici un exemple où le programme tire un nombre aléatoire entre 1 et 99.
 ```python
 import random
 
-n = random.randint(1, 100)
+n = random.randint(1, 99)
 print(a)
 ```
 
-> ### <span style="background-color:#c6d9f7">  Exercice 20 - Devine mon nombre
+> ### <span style="background-color:#c6d9f7">  Exercice 20 - Devine mon nombre 🤔
 > 
 > Ecrivez un programme qui permet de jouer à "Devine mon nombre":
 > 1. Laissez le programme tirer un nombre aléatoire entre 1 et 50.
