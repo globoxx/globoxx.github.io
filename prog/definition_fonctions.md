@@ -72,7 +72,7 @@ def volume_cylindre(rayon, hauteur):
 	
 v1 = volume_cylindre(2.3, 10)
 v2 = volume_cylindre(1.2, 5)
-print("Le volume des cylindres est de {v1} et {v2}")
+print(f"Le volume des cylindres est de {v1} et {v2}")
 ```
 L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la hauteur d’un cylindre afin d’en retourner le volume 🤓
 

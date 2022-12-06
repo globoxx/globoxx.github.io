@@ -57,7 +57,7 @@ Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 > ```python
 > resultat = pow(3.5, 5)
 > # On pourrait aussi écrire: resultat = 3.5 ** 5
-> print(f"3.5 à la puissance 5 vaut {resultat})
+> print(f"3.5 à la puissance 5 vaut {resultat}")
 > ```
 > </details>
 
