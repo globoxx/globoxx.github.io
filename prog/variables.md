@@ -7,11 +7,11 @@
 
 Une variable est une valeur **nommée et stockée en mémoire** qui va varier au cours du programme.  
 En Python, les types de variables de base sont les suivants :
-1. Les nombre entiers, appelés **int**: 2, 45, -4, 56.
-2. Les nombres à virgules, appelés **float**: 2.3, 6.5, 78.9, -89.0. La décimale est indiquée par un point (et non une virgule) comme cela est l’usage dans les pays anglo-saxons.
-3. Les chaines de caractères, appelés **str** (pour string, chaîne): "bonjour", "au revoir", "3432", "232.543". Il s’agit simplements d’une suite de caractères placées entre guillemets ("") ou entre apostrophes ('').
-4. Les booléens, appelés **bool**: True, False. Ce type de variable ne peut prendre que deux valeurs : True (vrai) et False (faux), à écrire avec une majuscule.
-Il est possible de vérifier le type d’une variable à l’aide de la fonction `type`.
+1. Les **nombre entiers**, appelés **int**: 2, 45, -4, 56.
+2. Les **nombres à virgules**, appelés **float**: 2.3, 6.5, 78.9, -89.0. La décimale est indiquée par un point (et non une virgule) comme cela est l’usage dans les pays anglo-saxons.
+3. Les **chaines de caractères**, appelés **str** (pour string, chaîne): "bonjour", "au revoir", "3432", "232.543". Il s’agit simplements d’une suite de caractères placées entre guillemets ("") ou entre apostrophes ('').
+4. Les **booléens**, appelés **bool**: True, False. Ce type de variable ne peut prendre que deux valeurs : True (vrai) et False (faux), à écrire avec une majuscule.  
+Il est possible de vérifier le type d’une variable à l’aide de la fonction `type` 😉
 
 > ### <span style="background-color:#c6d9f7"> Exercice 3 </span>
 >
@@ -63,13 +63,14 @@ Enfin, les **opérateur logiques** suivants sont définis sur les booléens:
 * or (ou)
 * not (non)
 
-Les opérateurs sur les nombres suivent le même ordre de priorité qu’en mathématique.
+Les opérateurs sur les nombres **suivent le même ordre de priorité qu’en mathématique**.
 Les opérateurs arithmétiques ont la priorité sur les autres types d’opérateurs.
-Il est fortement recommendé d’utiliser les parenthèses pour clarifier l’ordre des opérations en cas de doute.
+Il est fortement recommendé d’utiliser les parenthèses pour clarifier l’ordre des opérations en cas de doute. 🤔
 
 ## Assignation de variables
 
-Afin de manipuler des valeurs, il est utile de leur donner des noms, c’est ce qu’on appelle une **assignation**.
+Afin de manipuler des valeurs, il est utile de leur **donner des noms**, c’est ce qu’on appelle une **assignation**.  
+**Une variable est donc créée qu'on l'on assigne un nom à une valeur**.  
 Ceci se fait en utilisant l’opérateur `=` (à ne pas confondre avec l’opérateur `==` et qui est différent du `=` mathématique).
 
 ```python
@@ -77,14 +78,14 @@ a = "Bonjour"
 print(a)
 ```
 
-Dans l’exemple ci-dessus, on donne le nom a à la chaîne de caractère "bonjour".
+Dans l’exemple ci-dessus, on donne le nom `a` à la chaîne de caractère "bonjour".
 On peut dire que la variable `a` contient la chaîne de caractère "bonjour".
 **Une fois une variable nommée, on peut la manipuler en l’appelant par son nom**.
 Dans cet exemple, on demande à l’ordinateur d’écrire le contenu de `a` dans le terminal, c’est-à-dire "bonjour".
 
 > ### <span style="background-color:#c6d9f7"> Exercice 4 </span>
 > 
-> Python ne permet pas d’utiliser n’importe quel nom de variable.  
+> ⚠️ Python ne permet pas d’utiliser n’importe quel nom de variable. ⚠️ 
 > Essayez d’utiliser les noms suivants pour nommer vos variables:  
 > a) 38b  
 > b) ’variable’  
@@ -94,8 +95,8 @@ Dans cet exemple, on demande à l’ordinateur d’écrire le contenu de `a` dan
 > Lancez votre programme. Qu’observez-vous ?
 
 > <details><summary markdown="span">Solution</summary>
-> Tous ces noms de variables sont interdits et Python vous le fera savoir !  
-> Les règles expliquant le nommage de variables est expliqué juste au dessous.  
+> Tous ces noms de variables sont interdits et Python vous le fera savoir ! 😡  
+> Les règles expliquant le nommage de variables sont expliquées juste au dessous.  
 > Plus d'informations [ici](https://python.sdv.univ-paris-diderot.fr/02_variables/#23-nommage){:target="_blank"} 😉
 > </details>
 
@@ -183,13 +184,14 @@ b = True
 ```
 
 Vous serez très heureux d’avoir correctement nommé vos variables quand votre programme deviendra plus complexe.
-Sans cela, il deviendrait rapidement illisible.
+Sans cela, il deviendrait rapidement illisible 🤯  
+Ces conventions et bonnes pratiques sont écrites par la communauté dans des [PEP](https://python.sdv.univ-paris-diderot.fr/15_bonnes_pratiques/){:target="_blank"}.
 
 ### Exercices Turtle 🐢 (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 2 </span>
 > 
-> Ecrivez un programme qui dessine une maison (un carré avec un triangle sur la tête).
+> Ecrivez un programme qui dessine une maison 🏠 (un carré avec un triangle sur la tête).
 > Vous êtes conseillés de reprendre les exemples et exercices Turtle du 1er chapitre et de les combiner.  
 > Utilisez des variables pour éviter d’avoir à écrire plusieurs fois les mêmes chiffres (ex : `forward(d)` au lieu de `forward(100)`).
 
