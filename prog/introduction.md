@@ -31,7 +31,7 @@ En anglais, "print" signifie “imprime". En Python, l’instruction `print` dem
 
 Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
 En Python un commentaire est introduit par le caractère \#.  
-**Tout ce qui vient après et jusqu’à la fin de la ligne n’est pas lu par l’ordinateur**.
+**Tout ce qui vient après et jusqu’à la fin de la ligne n’est pas lu par l’ordinateur**.  
 Cela sert uniquement à l’humain qui va lire le programme 🤓
 ```python
 # un tout petit programme
