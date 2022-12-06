@@ -48,7 +48,7 @@ print("bonjour") # salutations
 > Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
 > </details>
 
-## Exercices Turtle (facultatif)
+## Exercices Turtle 🐢 (facultatif)
 
 `turtle` est un module Python permettant de faire du **dessin en codant**. La tortue peut se déplacer et dessiner une trace avec les 4 fonctions:
 1. `forward(d)` pour avancer d’une distance `d` (en pixels).

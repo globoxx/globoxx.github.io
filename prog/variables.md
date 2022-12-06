@@ -185,7 +185,7 @@ b = True
 Vous serez très heureux d’avoir correctement nommé vos variables quand votre programme deviendra plus complexe.
 Sans cela, il deviendrait rapidement illisible.
 
-### Exercices Turtle (facultatif)
+### Exercices Turtle 🐢 (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 2 </span>
 > 

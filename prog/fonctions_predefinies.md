@@ -168,7 +168,7 @@ Si l’on n’appelle pas la fonction `int` dans la première ligne, `annee` ser
 > ```
 > </details>
 
-### Exercices Turtle (facultatif)
+### Exercices Turtle 🐢 (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 3 </span>
 

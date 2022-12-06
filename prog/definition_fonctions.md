@@ -60,7 +60,7 @@ saluer("Pierre", "Schmutz")
 
 Notez que les arguments doivent être donnés **dans le même ordre que dans la définition** de la fonction afin que le programme sache quelle entrée correspond à quel argument.
 
-> ### <span style="background-color:#c6d9f7"> Exercice 13 - Salutations </span>
+> ### <span style="background-color:#c6d9f7"> Exercice 13 - Salutations 👋 </span>
 >
 > Modifiez l’exemple ci-dessus pour ajouter un troisième argument de votre choix à la fonction `saluer`.  
 > Faites en sorte que la fonction utilise ce nouvel argument dans son message de bienvenue puis appelez la fonction.
@@ -91,7 +91,7 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > L'IMC n'est q'un indicateur et ne permet absolument pas, à lui seul, de déterminer l'état de santé d'une personne.
 >
 
-### Exercices Turtle (facultatif)
+### Exercices Turtle 🐢 (facultatif)
 
 > ### <span style="background-color:#A8D6C2"> Exercice Turtle 4 - Une maison fonctionnelle </span>
 >

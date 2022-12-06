@@ -22,7 +22,7 @@ else:
 Dans l’exemple ci-dessus, on définit la variable booléenne `ok` à True (vrai).
 L’instruction `if` teste cette variable.
 * Si elle est vraie, le bloc d’instructions (décalé à droite) qui vient après les deux points est exécuté. 
-* Sinon, le bloc `else` (sinon, en français) est exécuté à la place.
+* Sinon, le bloc `else` (sinon, en français) est exécuté à la place.  
 ⚠️ Notez que le bloc `else` n'est pas obligatoire. ⚠️
 
 **L’indentation du texte (le décalage à droite) est importante**.
@@ -107,7 +107,7 @@ Ainsi, `a` passera de 1 à 2 à 4 à 8, etc.
 > Très bien, merci de demander !
 > ```
 
-La fonction `randint(min, max)` du module `random` permet de tirer un nombre entier aléatoire entre `min` et `max` (compris).  
+La fonction `randint(min, max)` du module `random` permet de **tirer un nombre entier aléatoire** entre `min` et `max` (compris).  
 Voici un exemple où le programme tire un nombre aléatoire entre 1 et 99.
 ```python
 import random
