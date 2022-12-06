@@ -8,7 +8,7 @@
 Python, comme tout autre langage de programmation, contient tout une séries de fonctions, c’est-à-dire **des instructions déjà définies qui font faire quelque chose de précis au programme**.
 Nous en avons déjà utilisés deux au chapitre précédent, la fonction `print` qui affiche quelque chose à l’écran et la fonction `type` qui retourne le type d’un objet.
 
-Elles permettent aux programmeurs de **gagner du temps en réutilisant du code déjà écrit une fois** 🙏
+Elles permettent aux programmeurs de **gagner du temps en réutilisant du code déjà écrit (par quelqu'un d'autre)** 🙏
 
 **L’appel d’une fonction s’effectue en indiquant la nom de la fonction, suivi d’une paires de parenthèses**.
 Ces parenthèse contiennent les éventuels arguments de la fonction, c’est-à-dire les objets nécessaires pour que la fonction puisse être exécutée.
@@ -24,7 +24,7 @@ type(a) # calcule le type de a (str) mais n'affiche rien
 
 Dans l’exemple ci-dessus, chaque appel de fonction se fait en fournissant un argument.
 Cet argument peut soit être une valeur donnée directement (comme dans les deux premières lignes), soit une variable (ligne 4-5).  
-Certaines fonctions prennent plus qu’un argument comme la fonction `pow` qui calcule la puissance de deux nombres, et qui a donc besoin de deux arguments.
+**Certaines fonctions prennent plus qu’un argument** comme la fonction `pow` qui calcule la puissance de deux nombres, et qui a donc besoin de deux arguments.
 
 ```python
 a = pow(2, 3) # calcule 2 puissance 3
@@ -55,8 +55,8 @@ Ainsi les 2 `print` de l'exemple précédent affichent la même chose.
 
 > <details><summary markdown="span">Solution</summary>
 > ```python
-> resultat = 3.5 ** 5
-> # On pourrait aussi écrire: resultat = pow(3.5, 5)
+> resultat = pow(3.5, 5)
+> # On pourrait aussi écrire: resultat = 3.5 ** 5
 > print(f"3.5 à la puissance 5 vaut {resultat})
 > ```
 > </details>
