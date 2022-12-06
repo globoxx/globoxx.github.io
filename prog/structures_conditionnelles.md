@@ -74,7 +74,7 @@ else:
 
 ## L'instruction while
 
-L’instruction `while` (qui signifie "tant que" en anglais) permet de répéter un bloc d’instructions tant qu’une condition est remplie.   
+L’instruction `while` (qui signifie "tant que" en anglais) permet de **répéter un bloc d’instructions tant qu’une condition est remplie**.   
 C'est extrêmement pratique pour réduire le nombre de lignes de code 😜
 
 ```python
