@@ -3,7 +3,7 @@
 [Mémento Python](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3.pdf){:target="_blank"}  
 [Raccourcis clavier](https://support.apple.com/fr-ch/HT201236){:target="_blank"}
 
-## Votre tout premier programme
+## Votre tout premier programme 🤩
 
 Lors de ces travaux pratiques, vous allez écrire des petits programmes Python sur l’IDE **Thonny** qui est déjà installé sur les machines de l’école.
 
@@ -11,7 +11,7 @@ Voici un exemple d’un tout petit programme en Python qui ne contient qu’une 
 ```python
 print("bonjour")
 ```
-En anglais, "print" signifie “imprime". En Python, l’instruction `print` demande à l’ordinateur d’afficher à l’écran le contenu de la parenthèse qui vient après.
+En anglais, "print" signifie “imprime". En Python, l’instruction `print` demande à l’ordinateur **d’afficher à l’écran le contenu de la parenthèse qui vient après**.
 
 > ### <span style="background-color:#c6d9f7"> Exercice 1 </span>
 >
@@ -30,9 +30,9 @@ En anglais, "print" signifie “imprime". En Python, l’instruction `print` dem
 ## Les commentaires
 
 Il est souvent utile de mettre des commentaires dans un programme, pour expliquer ce qu’il fait.
-En Python un commentaire est introduit par le caractère \#. 
+En Python un commentaire est introduit par le caractère \#.  
 **Tout ce qui vient après et jusqu’à la fin de la ligne n’est pas lu par l’ordinateur**.
-Cela sert uniquement à l’humain qui va lire le programme.
+Cela sert uniquement à l’humain qui va lire le programme 🤓
 ```python
 # un tout petit programme
 print("bonjour") # salutations
@@ -43,9 +43,9 @@ print("bonjour") # salutations
 > Enlevez les guillemets autour de "bonjour". Qu’est-ce qui se passe ?
 
 > <details><summary markdown="span">Solution</summary>
-> Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, bonjour désigne une variable ayant pour nom bonjour.  
+> Le programme n’est plus compris par la machine car si "bonjour" était un texte pouvant être affiché sans problème, `bonjour` désigne une variable ayant pour nom bonjour.  
 > Cette variable n’existant pas au moment de son appel, l’ordinateur ne sait pas quoi afficher 🤔  
-> Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou '').
+> ⚠️ Du texte s'écrit toujours entre guillemets ou apostrophes ("" ou ''). ⚠️
 > </details>
 
 ## Exercices Turtle 🐢 (facultatif)
