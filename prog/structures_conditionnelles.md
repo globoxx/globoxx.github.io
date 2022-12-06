@@ -10,7 +10,7 @@ Les structures de contrôle se retrouvent de façon presque identique dans tous 
 
 ## L'instruction if
 
-L’instruction `if` (si, en anglais) permet d’effectuer une liste d’instructions uniquement si une valeur booléenne (appelée la condition) est True (vraie) et une autre liste d’instruction sinon.
+L’instruction `if` (si, en anglais) permet d’**effectuer une liste d’instructions uniquement si une valeur booléenne (appelée la condition) est True (vraie) et une autre liste d’instruction sinon**.
 ```python
 ok = True
 if ok:
