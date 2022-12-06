@@ -26,7 +26,7 @@ L’instruction `if` teste cette variable.
 ⚠️ Notez que le bloc `else` n'est pas obligatoire. ⚠️
 
 **L’indentation du texte (le décalage à droite) est importante**.
-Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.
+Elle permet à l’ordinateur de savoir quelles sont les instructions qui appartiennent au bloc du `if` et quelles sont celles qui appartiennent au bloc du `else`.  
 (L'indentation se fait de préférence avec la touche tabulation (**TAB**) du clavier.)
 
 > ### <span style="background-color:#c6d9f7">  Exercice 15 - Jeune ou vieux ? 👴
