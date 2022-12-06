@@ -10,7 +10,7 @@ Les structures de contrôle se retrouvent de façon presque identique dans tous 
 
 ## L'instruction if
 
-L’instruction `if` (si, en anglais) permet d’**effectuer une liste d’instructions uniquement si une valeur booléenne (appelée la condition) est True (vraie) et une autre liste d’instruction sinon**.
+L’instruction `if` (si, en anglais) permet d’**effectuer une liste d’instructions uniquement si une valeur booléenne (appelée la condition) est True (vraie)**.
 ```python
 ok = True
 if ok:
@@ -23,6 +23,7 @@ Dans l’exemple ci-dessus, on définit la variable booléenne `ok` à True (vra
 L’instruction `if` teste cette variable.
 * Si elle est vraie, le bloc d’instructions (décalé à droite) qui vient après les deux points est exécuté. 
 * Sinon, le bloc `else` (sinon, en français) est exécuté à la place.  
+
 ⚠️ Notez que le bloc `else` n'est pas obligatoire. ⚠️
 
 **L’indentation du texte (le décalage à droite) est importante**.
