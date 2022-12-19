@@ -133,6 +133,64 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > 2. Ecrivez une fonction `triangle(taille)` qui dessine un triangle équilatéral avec la taille passée en argument.
 > 3. Enfin, écrivez une fonction `maison(taille)` qui appelle les 2 fonctions précédentes pour dessiner une maison de la taille passée en argument.
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> import turtle # Importe le module
+> 
+> # Fonction qui dessine un carré de taille d
+> def dessine_carre(d):
+>     turtle.forward(d) # Avance de 100 pixels
+>     turtle.left(90) # Tourne a gauche de 90 degres
+>     turtle.forward(d)
+>     turtle.left(90)
+>     turtle.forward(d)
+>     turtle.left(90)
+>     turtle.forward(d)
+>     turtle.left(90)
+>    
+> # Fonction qui dessine un triangle de taille d
+> def dessine_triangle(d):
+>     turtle.forward(d) # Avance de 100 pixels
+>     turtle.left(120) # Tourne a gauche de 120 degres (180-60)
+>     turtle.forward(d)
+>     turtle.left(120)
+>     turtle.forward(d)
+>     turtle.left(120)
+>     
+> # Fonction qui dessine une maison de taille d
+> def dessine_maison(d):
+>     # On dessine le carré
+>     dessine_carre(d)
+> 
+>     # On se déplace au sommet du carré
+>     turtle.left(90)
+>     turtle.forward(d)
+>     turtle.right(90)
+> 
+>     # On dessine le triangle
+>     dessine_triangle(d)
+> 
+> d = int(input("Entrez la taille de la maison: ")) # On demande à l'utilisateur la taille de la maison
+> 
+> # On dessine la maison de taille d
+> dessine_maison(d)
+> 
+> # Il est ensuite très facile de dessiner d'autres maisons de tailles variables
+> turtle.up() # Permet de lever le stylo
+> turtle.goto(125, 125) # Se déplace à ces coordonnées
+> turtle.down() # Permet de recommencer à dessiner
+> dessine_maison(d/2)
+> 
+> turtle.up()
+> turtle.goto(-250, -250)
+> turtle.down()
+> dessine_maison(d*2)
+> 
+> turtle.done() # Termine le dessin
+> ```
+> </details>
+
+
 ---
 
 [Retour à l'accueil](../README.md)
