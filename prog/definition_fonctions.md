@@ -116,11 +116,15 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 
 > <details><summary markdown="span">Solution</summary>
 > ```python
-> def saluer(prenom, nom, age):
-> 	print(f"Bonjour {prenom} {nom} qui a {age} ans !")
-> 	print("Bienvenue !")
-> 	
-> saluer("Pierre", "Schmutz", 34)
+> def calcule_imc(poids, taille):
+>     imc = poids / taille**2
+>     return imc
+> 
+> poids = float(input("Entrez votre poids (kg): "))
+> taille = float(input("Entrez votre taille (m): "))
+> imc = calcule_imc(poids, taille)
+> 
+> print(f"Votre IMC est de {imc}")
 > ```
 > </details>
 
