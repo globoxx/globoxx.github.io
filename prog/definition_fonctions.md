@@ -48,6 +48,20 @@ L’exemple ci-dessus montre la définition d’une fonction nommée `au_cube` p
 > Ecrivez une fonction `au_carre(n)` qui calcule le carré d’un nombre et le retourne.  
 > Utilisez cette fonction pour calculer et afficher le carré des nombres 6, -5 et 573.28.
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> def au_carre(n):
+>     carre = n**2
+>     return carre
+> 
+> a = au_carre(6)
+> b = au_carre(-5)
+> c = au_carre(573.28)
+> 
+> print(f"Les carrés de 6, -5 et 573.28 sont {a}, {b} et {c}")
+> ```
+> </details>
+
 L’exemple suivant montre la définition d’une fonction qui ne **retourne aucune valeur**: la fonction ne se termine pas par le mot-clé `return`. 
 La fonction s’exécute (ici elle affiche des choses) mais ne retourne rien.
 ```python
@@ -64,6 +78,16 @@ Notez que les arguments doivent être donnés **dans le même ordre que dans la 
 >
 > Modifiez l’exemple ci-dessus pour ajouter un troisième argument de votre choix à la fonction `saluer`.  
 > Faites en sorte que la fonction utilise ce nouvel argument dans son message de bienvenue puis appelez la fonction.
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> def saluer(prenom, nom, age):
+> 	print(f"Bonjour {prenom} {nom} qui a {age} ans !")
+> 	print("Bienvenue !")
+> 	
+> saluer("Pierre", "Schmutz", 34)
+> ```
+> </details>
 
 ```python
 def volume_cylindre(rayon, hauteur):
@@ -89,7 +113,16 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > Votre IMC est de 24.810964083175
 > ```
 > L'IMC n'est q'un indicateur et ne permet absolument pas, à lui seul, de déterminer l'état de santé d'une personne.
->
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> def saluer(prenom, nom, age):
+> 	print(f"Bonjour {prenom} {nom} qui a {age} ans !")
+> 	print("Bienvenue !")
+> 	
+> saluer("Pierre", "Schmutz", 34)
+> ```
+> </details>
 
 ### Exercices Turtle 🐢 (facultatif)
 
