@@ -176,7 +176,7 @@ Ainsi, `a` passera de 1 à 2 à 4 à 8, etc.
 >    
 > print("Très bien, merci de demander !")
 > ```
-> ⚠️ Notez que Python est sensible à la casse (majuscule/minuscule) ⚠️
+> ⚠️ Notez que Python est sensible à la casse (majuscule/minuscule) ⚠️  
 > Cela signifie que "Salut" et "salut" ne sont pas égaux lors d'une comparaison (`==`).
 > </details>
 
