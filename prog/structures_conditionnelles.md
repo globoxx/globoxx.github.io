@@ -35,9 +35,35 @@ Elle permet à l’ordinateur de savoir quelles sont les instructions qui appart
 > Ecrivez un programme qui demande son âge à l’utilisateur. 
 > Si l’utilisateur donne un nombre inférieur à 20, le programme écrit "Comme vous êtes jeune !", sinon il écrit "Comme vous êtes vieux !".
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> age = int(input("Entrez votre age: "))
+> 
+> if age < 20:
+>     print("Comme vous êtes jeune !")
+> else:
+>     print("Comme vous êtes vieux !")
+> ```
+> Ici nous utilisons la fonction `int` car nous supposons que l'utilisateur entrera un nombre entier.
+> Cependant le programme fonctionnerait de la même manière en utilisant la fonction `float`.
+> </details>
+
 > ### <span style="background-color:#c6d9f7">  Exercice 16 - Maximum
 > 
 > Ecrivez la fonction maximum(a, b) qui prend 2 nombres en argument et retourne le plus grand.
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> def maximum(a, b):
+>     if a > b:
+>         return a
+>     else:
+>         return b
+>     
+> print(maximum(3, 4)) # Affiche 4
+> ```
+> Cette fonction ne permet de comparer que 2 nombres mais nous verrons plus tard comment trouver le maximum dans une liste avec beaucoup de nombres 😉
+> </details>
 
 Le bloc `elif` peut être ajouté après le bloc `if` pour **tester des conditions supplémentaires**.
 Notez que `elif` est la contraction de *else if* (sinon si, en français).
@@ -73,6 +99,20 @@ else:
 > Match nul !
 > ```
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> buts_domicile = int(input("Buts marqués par l'équipe domicile: "))
+> buts_exterieur = int(input("Buts marqués par l'équipe extérieur: "))
+> 
+> if buts_domicile > buts_exterieur:
+>     print("L'équipe domicile a gagné !!")
+> elif buts_exterieur > buts_domicile:
+>     print("L'équipe extérieur a gagné !!")
+> else:
+>     print("Match nul !")
+> ```
+> </details>
+
 ## L'instruction while
 
 L’instruction `while` (qui signifie "tant que" en anglais) permet de **répéter un bloc d’instructions tant qu’une condition est remplie**.   
@@ -94,6 +134,25 @@ Ainsi, `a` passera de 1 à 2 à 4 à 8, etc.
 > 
 > Modifier le programme ci-dessus pour qu’il imprime toutes les puissances de 10 inférieures ou égales à 10000.
 
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> a = 10
+> while a <= 10000:
+> 	print(a)
+> 	a = a*10
+> print(f"Maintenant a vaut {a} !")
+> ```
+> Il est tout à fait possible d'arriver au même résultat en calculant la puissance de 10 à chaque tour de boucle en utilisant l'opérateur de puissance: `**`.
+> Voici un exemple:
+> ```python
+> a = 10
+> n = 1
+> while n <= 4:
+> 	print(a**n)
+> 	n = n + 1
+> ```
+> </details>
+
 > ### <span style="background-color:#c6d9f7">  Exercice 19 - Comment ça va ? 👋
 > 
 > Ecrivez un programme qui demande en boucle à l'utilisateur comment il va tant qu'il ne répond pas "Bien merci et toi ?".  
@@ -107,6 +166,19 @@ Ainsi, `a` passera de 1 à 2 à 4 à 8, etc.
 > Comment tu vas ? Bien merci et toi ?
 > Très bien, merci de demander !
 > ```
+
+> <details><summary markdown="span">Solution</summary>
+> ```python
+> reponse = input("Comment tu vas ? ")
+> 
+> while reponse != "Bien merci et toi ?":
+>     reponse = input("Comment tu vas ? ")
+>    
+> print("Très bien, merci de demander !")
+> ```
+> ⚠️ Notez que Python est sensible à la casse (majuscule/minuscule) ⚠️
+> Cela signifie que "Salut" et "salut" ne sont pas égaux lors d'une comparaison (`==`).
+> </details>
 
 La fonction `randint(min, max)` du module `random` permet de **tirer un nombre entier aléatoire** entre `min` et `max` (compris).  
 Voici un exemple où le programme tire un nombre aléatoire entre 1 et 99.
