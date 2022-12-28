@@ -151,7 +151,7 @@ Ainsi, `a` passera de 1 à 2 à 4 à 8, etc.
 > 	print(a**n)
 > 	n = n + 1
 > ```
->
+>  
 > </details>
 
 > ### <span style="background-color:#c6d9f7">  Exercice 19 - Comment ça va ? 👋
