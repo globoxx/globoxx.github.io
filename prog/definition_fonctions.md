@@ -60,6 +60,7 @@ L’exemple ci-dessus montre la définition d’une fonction nommée `au_cube` p
 > 
 > print(f"Les carrés de 6, -5 et 573.28 sont {a}, {b} et {c}")
 > ```
+> Evidemment, cette fonction n'est pas très utile car elle reproduit simplement l'opération `n**2`😅
 > </details>
 
 L’exemple suivant montre la définition d’une fonction qui ne **retourne aucune valeur**: la fonction ne se termine pas par le mot-clé `return`. 
@@ -126,6 +127,7 @@ L’exemple ci-dessus montre une fonction prenant en arguments le rayon et la ha
 > 
 > print(f"Votre IMC est de {imc}")
 > ```
+> Gardez à l'esprit qu'une fois que vous avez choisi un nom pour une fonction ou une variable, vous ne pouvez pas utiliser ce nom pour une autre fonction ou variable.
 > </details>
 
 ### Exercices Turtle 🐢 (facultatif)
