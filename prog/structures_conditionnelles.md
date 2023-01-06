@@ -186,7 +186,7 @@ Voici un exemple où le programme tire un nombre aléatoire entre 1 et 99.
 import random
 
 n = random.randint(1, 99)
-print(a)
+print(n)
 ```
 
 > ### <span style="background-color:#c6d9f7">  Exercice 20 - Devine mon nombre 🤔
